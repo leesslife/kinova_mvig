@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ziye01/lees_ros/kinova_ws/devel/include/**",
+        "/home/ziye01/lees_ros/rosl/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ziye01/lees_ros/rosl/src/actionlib_tutorials/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2s6s300_ikfast/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2s7s300_ikfast/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova_client/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinovasev/include/**",
+        "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/m1n6s300_ikfast/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

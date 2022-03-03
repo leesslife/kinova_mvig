@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="jaco_interaction" pkg="jaco_control" type="jaco_interaction">
+  <param name="cutting_force_K" type="double" value="100.0" />
+  <param name="cutting_force_D" type="double" value="10.0" />
+  <param name="constraint_force_K" type="double" value="10.0" />
+  <param name="constraint_force_D" type="double" value="2.0" />
+</node>
+\endverbatim
+

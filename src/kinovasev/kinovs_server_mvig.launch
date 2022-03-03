@@ -1,0 +1,17 @@
+<launch>
+    <include file="$(find kinova_bringup)/launch/kinova_robot.launch">
+        <arg name="kinova_robotType" value="j2s7s300" />
+    </include>
+    <!--<arg name="debug" default="false"/>
+    <include file="$(find gazebo_ros)/launch/world.launch">
+        <arg name="debug" value="$(arg debug)" />
+        <arg name="use_sim_time" value="true"/>
+    </include>-->
+    <group ns="kinovasev_server">
+        <node pkg="kinovasev" name="kino_mvig_sev" type="kinova_server.py" output="screen"/>
+        <node pkg="kinovasev" name="kino_mvig_BPose" type="BiCodePose" output="screen"/>
+        <node pkg="kinovasev" name="kino_mvig_stop" type="stop_run_kinova" output="screen"/>
+        <rosparam file="$(find kinovasev)/force_max_set.yaml" command="load"/>
+    </group>
+    
+</launch>

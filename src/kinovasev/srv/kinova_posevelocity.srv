@@ -1,0 +1,9 @@
+float32 t_x
+float32 t_y
+float32 t_z
+float32 ar
+float32 ap
+float32 az
+int64 kinova_s
+---
+bool pose_velocity_result

@@ -1,0 +1,5 @@
+float32 linear_x
+float32 theta
+int64 wheel_ms
+---
+bool wheelchair_pose_result

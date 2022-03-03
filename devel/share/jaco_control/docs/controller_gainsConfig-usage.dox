@@ -1,0 +1,46 @@
+\subsubsection usage Usage
+\verbatim
+<node name="jaco_controller" pkg="jaco_control" type="jaco_controller">
+  <param name="velocity_K_p_1" type="double" value="5.0" />
+  <param name="velocity_K_p_2" type="double" value="5.0" />
+  <param name="velocity_K_p_3" type="double" value="5.0" />
+  <param name="velocity_K_p_4" type="double" value="5.0" />
+  <param name="velocity_K_p_5" type="double" value="5.0" />
+  <param name="velocity_K_p_6" type="double" value="5.0" />
+  <param name="velocity_K_p_7" type="double" value="5.0" />
+  <param name="velocity_K_d_1" type="double" value="1.0" />
+  <param name="velocity_K_d_2" type="double" value="1.0" />
+  <param name="velocity_K_d_3" type="double" value="1.0" />
+  <param name="velocity_K_d_4" type="double" value="1.0" />
+  <param name="velocity_K_d_5" type="double" value="1.0" />
+  <param name="velocity_K_d_6" type="double" value="1.0" />
+  <param name="velocity_K_d_7" type="double" value="1.0" />
+  <param name="fftorque_K_p_1" type="double" value="45.0" />
+  <param name="fftorque_K_p_2" type="double" value="45.0" />
+  <param name="fftorque_K_p_3" type="double" value="45.0" />
+  <param name="fftorque_K_p_4" type="double" value="10.0" />
+  <param name="fftorque_K_p_5" type="double" value="10.0" />
+  <param name="fftorque_K_p_6" type="double" value="10.0" />
+  <param name="fftorque_K_p_7" type="double" value="10.0" />
+  <param name="fftorque_K_d_1" type="double" value="4.0" />
+  <param name="fftorque_K_d_2" type="double" value="4.0" />
+  <param name="fftorque_K_d_3" type="double" value="4.0" />
+  <param name="fftorque_K_d_4" type="double" value="1.5" />
+  <param name="fftorque_K_d_5" type="double" value="1.5" />
+  <param name="fftorque_K_d_6" type="double" value="1.5" />
+  <param name="fftorque_K_d_7" type="double" value="1.5" />
+  <param name="impedance_K_p_x" type="double" value="10.0" />
+  <param name="impedance_K_p_y" type="double" value="10.0" />
+  <param name="impedance_K_p_z" type="double" value="10.0" />
+  <param name="impedance_K_p_w_x" type="double" value="10.0" />
+  <param name="impedance_K_p_w_y" type="double" value="10.0" />
+  <param name="impedance_K_p_w_z" type="double" value="10.0" />
+  <param name="impedance_K_d_x" type="double" value="1.0" />
+  <param name="impedance_K_d_y" type="double" value="1.0" />
+  <param name="impedance_K_d_z" type="double" value="1.0" />
+  <param name="impedance_K_d_w_x" type="double" value="1.0" />
+  <param name="impedance_K_d_w_y" type="double" value="1.0" />
+  <param name="impedance_K_d_w_z" type="double" value="1.0" />
+</node>
+\endverbatim
+

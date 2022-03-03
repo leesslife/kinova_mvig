@@ -1,0 +1,45 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~velocity_K_p_1" : \b [double] Velocity controller: P gain for joint 1 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_p_2" : \b [double] Velocity controller: P gain for joint 2 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_p_3" : \b [double] Velocity controller: P gain for joint 3 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_p_4" : \b [double] Velocity controller: P gain for joint 4 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_p_5" : \b [double] Velocity controller: P gain for joint 5 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_p_6" : \b [double] Velocity controller: P gain for joint 6 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_p_7" : \b [double] Velocity controller: P gain for joint 7 min: 0.0, default: 5.0, max: 200.0
+- \b "~velocity_K_d_1" : \b [double] Velocity controller: D gain for joint 1 min: 0.0, default: 1.0, max: 50.0
+- \b "~velocity_K_d_2" : \b [double] Velocity controller: D gain for joint 2 min: 0.0, default: 1.0, max: 50.0
+- \b "~velocity_K_d_3" : \b [double] Velocity controller: D gain for joint 3 min: 0.0, default: 1.0, max: 50.0
+- \b "~velocity_K_d_4" : \b [double] Velocity controller: D gain for joint 4 min: 0.0, default: 1.0, max: 50.0
+- \b "~velocity_K_d_5" : \b [double] Velocity controller: D gain for joint 5 min: 0.0, default: 1.0, max: 50.0
+- \b "~velocity_K_d_6" : \b [double] Velocity controller: D gain for joint 6 min: 0.0, default: 1.0, max: 50.0
+- \b "~velocity_K_d_7" : \b [double] Velocity controller: D gain for joint 7 min: 0.0, default: 1.0, max: 50.0
+- \b "~fftorque_K_p_1" : \b [double] Feedforward torque controller: P gain for joint 1 min: 0.0, default: 45.0, max: 200.0
+- \b "~fftorque_K_p_2" : \b [double] Feedforward torque controller: P gain for joint 2 min: 0.0, default: 45.0, max: 200.0
+- \b "~fftorque_K_p_3" : \b [double] Feedforward torque controller: P gain for joint 3 min: 0.0, default: 45.0, max: 200.0
+- \b "~fftorque_K_p_4" : \b [double] Feedforward torque controller: P gain for joint 4 min: 0.0, default: 10.0, max: 200.0
+- \b "~fftorque_K_p_5" : \b [double] Feedforward torque controller: P gain for joint 5 min: 0.0, default: 10.0, max: 200.0
+- \b "~fftorque_K_p_6" : \b [double] Feedforward torque controller: P gain for joint 6 min: 0.0, default: 10.0, max: 200.0
+- \b "~fftorque_K_p_7" : \b [double] Feedforward torque controller: P gain for joint 7 min: 0.0, default: 10.0, max: 200.0
+- \b "~fftorque_K_d_1" : \b [double] Feedforward torque controller: D gain for joint 1 min: 0.0, default: 4.0, max: 50.0
+- \b "~fftorque_K_d_2" : \b [double] Feedforward torque controller: D gain for joint 2 min: 0.0, default: 4.0, max: 50.0
+- \b "~fftorque_K_d_3" : \b [double] Feedforward torque controller: D gain for joint 3 min: 0.0, default: 4.0, max: 50.0
+- \b "~fftorque_K_d_4" : \b [double] Feedforward torque controller: D gain for joint 4 min: 0.0, default: 1.5, max: 50.0
+- \b "~fftorque_K_d_5" : \b [double] Feedforward torque controller: D gain for joint 5 min: 0.0, default: 1.5, max: 50.0
+- \b "~fftorque_K_d_6" : \b [double] Feedforward torque controller: D gain for joint 6 min: 0.0, default: 1.5, max: 50.0
+- \b "~fftorque_K_d_7" : \b [double] Feedforward torque controller: D gain for joint 7 min: 0.0, default: 1.5, max: 50.0
+- \b "~impedance_K_p_x" : \b [double] Impedance controller: P gain for x min: 0.0, default: 10.0, max: 200.0
+- \b "~impedance_K_p_y" : \b [double] Impedance controller: P gain for y min: 0.0, default: 10.0, max: 200.0
+- \b "~impedance_K_p_z" : \b [double] Impedance controller: P gain for z min: 0.0, default: 10.0, max: 200.0
+- \b "~impedance_K_p_w_x" : \b [double] Impedance controller: P gain for w_x min: 0.0, default: 10.0, max: 200.0
+- \b "~impedance_K_p_w_y" : \b [double] Impedance controller: P gain for w_y min: 0.0, default: 10.0, max: 200.0
+- \b "~impedance_K_p_w_z" : \b [double] Impedance controller: P gain for w_z min: 0.0, default: 10.0, max: 200.0
+- \b "~impedance_K_d_x" : \b [double] Impedance controller: D gain for x min: 0.0, default: 1.0, max: 50.0
+- \b "~impedance_K_d_y" : \b [double] Impedance controller: D gain for y min: 0.0, default: 1.0, max: 50.0
+- \b "~impedance_K_d_z" : \b [double] Impedance controller: D gain for z min: 0.0, default: 1.0, max: 50.0
+- \b "~impedance_K_d_w_x" : \b [double] Impedance controller: D gain for w_x min: 0.0, default: 1.0, max: 50.0
+- \b "~impedance_K_d_w_y" : \b [double] Impedance controller: D gain for w_y min: 0.0, default: 1.0, max: 50.0
+- \b "~impedance_K_d_w_z" : \b [double] Impedance controller: D gain for w_z min: 0.0, default: 1.0, max: 50.0
+

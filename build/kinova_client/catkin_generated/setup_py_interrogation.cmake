@@ -1,0 +1,7 @@
+set(kinova_client_SETUP_PY_SETUP_MODULE "distutils.core")
+set(kinova_client_SETUP_PY_VERSION "0.0.0")
+set(kinova_client_SETUP_PY_SCRIPTS "")
+set(kinova_client_SETUP_PY_PACKAGES "scripts")
+set(kinova_client_SETUP_PY_PACKAGE_DIRS "scripts")
+set(kinova_client_SETUP_PY_MODULES "")
+set(kinova_client_SETUP_PY_MODULE_DIRS "")

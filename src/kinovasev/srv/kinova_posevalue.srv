@@ -1,0 +1,5 @@
+string unit
+float32[] pose_value
+bool relative_
+---
+bool pose_control_result

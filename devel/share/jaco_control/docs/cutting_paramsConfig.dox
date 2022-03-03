@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~cutting_force_K" : \b [double] K Gain for Cutting Force min: 0.0, default: 100.0, max: 1000.0
+- \b "~cutting_force_D" : \b [double] D Gain for Cutting Force min: 0.0, default: 10.0, max: 200.0
+- \b "~constraint_force_K" : \b [double] K Gain for Constraint Force min: 0.0, default: 10.0, max: 1000.0
+- \b "~constraint_force_D" : \b [double] D Gain for Constraint Force min: 0.0, default: 2.0, max: 200.0
+

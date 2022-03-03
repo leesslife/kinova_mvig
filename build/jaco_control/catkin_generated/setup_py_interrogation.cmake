@@ -1,0 +1,7 @@
+set(jaco_control_SETUP_PY_SETUP_MODULE "distutils.core")
+set(jaco_control_SETUP_PY_VERSION "0.0.0")
+set(jaco_control_SETUP_PY_SCRIPTS "")
+set(jaco_control_SETUP_PY_PACKAGES "jaco_control")
+set(jaco_control_SETUP_PY_PACKAGE_DIRS "jaco_control")
+set(jaco_control_SETUP_PY_MODULES "")
+set(jaco_control_SETUP_PY_MODULE_DIRS "")

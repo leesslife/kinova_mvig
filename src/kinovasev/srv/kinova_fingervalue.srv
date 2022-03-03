@@ -1,0 +1,5 @@
+string unit
+float32[] finger_value
+bool relative_
+---
+bool finger_control_result
