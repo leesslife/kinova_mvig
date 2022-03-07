@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Utility rule file for _kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
 include kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/progress.make
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_msgs && ../../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kinova_msgs /home/ziye01/lees_ros/kinova_ws/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg kinova_msgs/ArmJointAnglesFeedback:kinova_msgs/ArmJointAnglesActionResult:kinova_msgs/ArmJointAnglesActionFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:kinova_msgs/JointAngles:kinova_msgs/ArmJointAnglesGoal:std_msgs/Header:kinova_msgs/ArmJointAnglesResult:kinova_msgs/ArmJointAnglesActionGoal
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kinova_msgs /home/ziye01/lees_ros/kinova_mvig/devel/share/kinova_msgs/msg/ArmJointAnglesAction.msg actionlib_msgs/GoalID:kinova_msgs/ArmJointAnglesActionFeedback:kinova_msgs/JointAngles:actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/ArmJointAnglesActionGoal:kinova_msgs/ArmJointAnglesActionResult:kinova_msgs/ArmJointAnglesFeedback:kinova_msgs/ArmJointAnglesGoal:kinova_msgs/ArmJointAnglesResult
 
 _kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction: kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction
 _kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction: kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/build.make
@@ -67,10 +67,10 @@ kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJ
 .PHONY : kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/build
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/cmake_clean.cmake
 .PHONY : kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/clean
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_msgs /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_msgs /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_msgs /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_ArmJointAnglesAction.dir/depend
 

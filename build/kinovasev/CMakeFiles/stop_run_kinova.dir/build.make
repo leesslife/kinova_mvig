@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Include any dependencies generated for this target.
 include kinovasev/CMakeFiles/stop_run_kinova.dir/depend.make
@@ -58,17 +58,17 @@ include kinovasev/CMakeFiles/stop_run_kinova.dir/progress.make
 include kinovasev/CMakeFiles/stop_run_kinova.dir/flags.make
 
 kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o: kinovasev/CMakeFiles/stop_run_kinova.dir/flags.make
-kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/stop_run_kinova.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o -c /home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/stop_run_kinova.cpp
+kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/stop_run_kinova.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o -c /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/stop_run_kinova.cpp
 
 kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.i"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/stop_run_kinova.cpp > CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.i
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/stop_run_kinova.cpp > CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.i
 
 kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.s"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/stop_run_kinova.cpp -o CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.s
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/stop_run_kinova.cpp -o CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.s
 
 # Object files for target stop_run_kinova
 stop_run_kinova_OBJECTS = \
@@ -77,39 +77,39 @@ stop_run_kinova_OBJECTS = \
 # External object files for target stop_run_kinova
 stop_run_kinova_EXTERNAL_OBJECTS =
 
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/build.make
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libroscpp.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librosconsole.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librostime.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libcpp_common.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stop_run_kinova.dir/link.txt --verbose=$(VERBOSE)
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/build.make
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libroscpp.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librosconsole.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/librostime.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /opt/ros/noetic/lib/libcpp_common.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stop_run_kinova.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-kinovasev/CMakeFiles/stop_run_kinova.dir/build: /home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/stop_run_kinova
+kinovasev/CMakeFiles/stop_run_kinova.dir/build: /home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/stop_run_kinova
 
 .PHONY : kinovasev/CMakeFiles/stop_run_kinova.dir/build
 
 kinovasev/CMakeFiles/stop_run_kinova.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/stop_run_kinova.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/stop_run_kinova.dir/cmake_clean.cmake
 .PHONY : kinovasev/CMakeFiles/stop_run_kinova.dir/clean
 
 kinovasev/CMakeFiles/stop_run_kinova.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/kinovasev /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/kinovasev /home/ziye01/lees_ros/kinova_ws/build/kinovasev/CMakeFiles/stop_run_kinova.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinovasev /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinovasev /home/ziye01/lees_ros/kinova_mvig/build/kinovasev/CMakeFiles/stop_run_kinova.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinovasev/CMakeFiles/stop_run_kinova.dir/depend
 

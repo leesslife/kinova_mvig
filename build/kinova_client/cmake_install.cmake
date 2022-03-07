@@ -1,8 +1,8 @@
-# Install script for directory: /home/ziye01/lees_ros/kinova_ws/src/kinova_client
+# Install script for directory: /home/ziye01/lees_ros/kinova_mvig/src/kinova_client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_mvig/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ziye01/lees_ros/kinova_ws/build/kinova_client/catkin_generated/safe_execute_install.cmake")
+  include("/home/ziye01/lees_ros/kinova_mvig/build/kinova_client/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/build/kinova_client/catkin_generated/installspace/kinova_client.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinova_client/catkin_generated/installspace/kinova_client.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_client/cmake" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_ws/build/kinova_client/catkin_generated/installspace/kinova_clientConfig.cmake"
-    "/home/ziye01/lees_ros/kinova_ws/build/kinova_client/catkin_generated/installspace/kinova_clientConfig-version.cmake"
+    "/home/ziye01/lees_ros/kinova_mvig/build/kinova_client/catkin_generated/installspace/kinova_clientConfig.cmake"
+    "/home/ziye01/lees_ros/kinova_mvig/build/kinova_client/catkin_generated/installspace/kinova_clientConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_client" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova_client/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_client" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova_client/package.xml")
 endif()
 

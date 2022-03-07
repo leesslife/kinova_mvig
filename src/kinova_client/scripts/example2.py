@@ -13,10 +13,11 @@ from controller.generator import RunStatusGenerator
 if __name__=="__main__":
     RS=RunStatusGenerator()
 
-    pos=RS.getMaxForce()
-    print(pos)
+    
 
     #RS.Stop()
     #RS.Start()
-    RS.SendMaxForce(max_x=30.0,max_y=30.0,max_z=30.0)
-    #RS.Start()
+    RS.SendMaxForce(max_x=10.0,max_y=10.0,max_z=10.0)
+    pos=RS.getMaxForce()
+    print(pos)
+    RS.Start()

@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_api.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_arm.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_comm.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,11 +25,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/include"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/BEFORE"
-  "/home/ziye01/lees_ros/kinova_ws/devel/include"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/BEFORE"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/include"
   )
 
 # Targets to which this target links.

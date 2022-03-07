@@ -286,13 +286,13 @@ double constraint_force_D;
 
 
 
-//#line 18 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 18 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       double cutting_force_K;
-//#line 19 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       double cutting_force_D;
-//#line 22 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       double constraint_force_K;
-//#line 23 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       double constraint_force_D;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -433,45 +433,45 @@ double constraint_force_D;
     {
 cutting_paramsConfig::GroupDescription<cutting_paramsConfig::DEFAULT, cutting_paramsConfig> Default("Default", "", 0, 0, true, &cutting_paramsConfig::groups);
 cutting_paramsConfig::GroupDescription<cutting_paramsConfig::DEFAULT::CUTTING_PARAMETERS, cutting_paramsConfig::DEFAULT> Cutting_Parameters("Cutting_Parameters", "", 0, 1, true, &cutting_paramsConfig::DEFAULT::cutting_parameters);
-//#line 18 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 18 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __min__.cutting_force_K = 0.0;
-//#line 18 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 18 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __max__.cutting_force_K = 1000.0;
-//#line 18 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 18 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __default__.cutting_force_K = 100.0;
-//#line 18 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 18 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       Cutting_Parameters.abstract_parameters.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("cutting_force_K", "double", 0, "K Gain for Cutting Force", "", &cutting_paramsConfig::cutting_force_K)));
-//#line 18 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 18 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __param_descriptions__.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("cutting_force_K", "double", 0, "K Gain for Cutting Force", "", &cutting_paramsConfig::cutting_force_K)));
-//#line 19 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __min__.cutting_force_D = 0.0;
-//#line 19 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __max__.cutting_force_D = 200.0;
-//#line 19 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __default__.cutting_force_D = 10.0;
-//#line 19 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       Cutting_Parameters.abstract_parameters.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("cutting_force_D", "double", 0, "D Gain for Cutting Force", "", &cutting_paramsConfig::cutting_force_D)));
-//#line 19 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __param_descriptions__.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("cutting_force_D", "double", 0, "D Gain for Cutting Force", "", &cutting_paramsConfig::cutting_force_D)));
-//#line 22 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __min__.constraint_force_K = 0.0;
-//#line 22 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __max__.constraint_force_K = 1000.0;
-//#line 22 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __default__.constraint_force_K = 10.0;
-//#line 22 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       Cutting_Parameters.abstract_parameters.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("constraint_force_K", "double", 0, "K Gain for Constraint Force", "", &cutting_paramsConfig::constraint_force_K)));
-//#line 22 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __param_descriptions__.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("constraint_force_K", "double", 0, "K Gain for Constraint Force", "", &cutting_paramsConfig::constraint_force_K)));
-//#line 23 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __min__.constraint_force_D = 0.0;
-//#line 23 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __max__.constraint_force_D = 200.0;
-//#line 23 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __default__.constraint_force_D = 2.0;
-//#line 23 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       Cutting_Parameters.abstract_parameters.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("constraint_force_D", "double", 0, "D Gain for Constraint Force", "", &cutting_paramsConfig::constraint_force_D)));
-//#line 23 "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/cfg/cutting_params.cfg"
+//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg"
       __param_descriptions__.push_back(cutting_paramsConfig::AbstractParamDescriptionConstPtr(new cutting_paramsConfig::ParamDescription<double>("constraint_force_D", "double", 0, "D Gain for Constraint Force", "", &cutting_paramsConfig::constraint_force_D)));
 //#line 124 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Cutting_Parameters.convertParams();

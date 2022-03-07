@@ -67,14 +67,14 @@ set(kinovasev_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(kinovasev_SOURCE_PREFIX /home/ziye01/lees_ros/kinova_ws/src/kinovasev)
-  set(kinovasev_DEVEL_PREFIX /home/ziye01/lees_ros/kinova_ws/devel)
+  set(kinovasev_SOURCE_PREFIX /home/ziye01/lees_ros/kinova_mvig/src/kinovasev)
+  set(kinovasev_DEVEL_PREFIX /home/ziye01/lees_ros/kinova_mvig/devel)
   set(kinovasev_INSTALL_PREFIX "")
   set(kinovasev_PREFIX ${kinovasev_DEVEL_PREFIX})
 else()
   set(kinovasev_SOURCE_PREFIX "")
   set(kinovasev_DEVEL_PREFIX "")
-  set(kinovasev_INSTALL_PREFIX /home/ziye01/lees_ros/kinova_ws/install)
+  set(kinovasev_INSTALL_PREFIX /home/ziye01/lees_ros/kinova_mvig/install)
   set(kinovasev_PREFIX ${kinovasev_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(kinovasev_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/ziye01/lees_ros/kinova_ws/devel/include;/home/ziye01/lees_ros/kinova_ws/src/kinovasev/include " STREQUAL " ")
+if(NOT "/home/ziye01/lees_ros/kinova_mvig/devel/include;/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/include " STREQUAL " ")
   set(kinovasev_INCLUDE_DIRS "")
-  set(_include_dirs "/home/ziye01/lees_ros/kinova_ws/devel/include;/home/ziye01/lees_ros/kinova_ws/src/kinovasev/include")
+  set(_include_dirs "/home/ziye01/lees_ros/kinova_mvig/devel/include;/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/ziye01/lees_ros/kinova_ws/devel/include;/home/ziye01/lees_ros/kino
         message(FATAL_ERROR "Project 'kinovasev' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'kinovasev' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ziye01/lees_ros/kinova_ws/src/kinovasev/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'kinovasev' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/${idir}'.  ${_report}")
     endif()
     _list_append_unique(kinovasev_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ziye01/lees_ros/kinova_ws/devel/lib;/home/ziye01/lees_ros/kinova_ws/devel/lib;/home/ziye01/lees_ros/rosl/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ziye01/lees_ros/kinova_mvig/devel/lib;/home/ziye01/lees_ros/kinova_mvig/devel/lib;/home/ziye01/lees_ros/rosl/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

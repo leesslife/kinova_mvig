@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "kinova_gazebo"
-PROJECT_SPACE_DIR = "/home/ziye01/lees_ros/kinova_ws/devel"
+PROJECT_SPACE_DIR = "/home/ziye01/lees_ros/kinova_mvig/devel"
 PROJECT_VERSION = "0.0.0"

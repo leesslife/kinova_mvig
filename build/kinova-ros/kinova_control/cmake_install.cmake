@@ -1,8 +1,8 @@
-# Install script for directory: /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_control
+# Install script for directory: /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_mvig/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_control/catkin_generated/installspace/kinova_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_control/catkin_generated/installspace/kinova_control.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control/cmake" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_control/catkin_generated/installspace/kinova_controlConfig.cmake"
-    "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_control/catkin_generated/installspace/kinova_controlConfig-version.cmake"
+    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_control/catkin_generated/installspace/kinova_controlConfig.cmake"
+    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_control/catkin_generated/installspace/kinova_controlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_control/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_control/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_control/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_control/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_control" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_control/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/kinova_control" TYPE PROGRAM FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_control/src/move_robot.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/kinova_control" TYPE PROGRAM FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_control/src/move_robot.py")
 endif()
 

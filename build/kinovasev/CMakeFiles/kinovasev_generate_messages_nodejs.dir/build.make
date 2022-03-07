@@ -43,75 +43,75 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Utility rule file for kinovasev_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/progress.make
 
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/msg/realsense.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js
-kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/msg/realsense.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js
+kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js
 
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/msg/realsense.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/msg/realsense.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg/realsense.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from kinovasev/realsense.msg"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg/realsense.msg -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/msg
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/msg/realsense.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/msg/realsense.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg/realsense.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from kinovasev/realsense.msg"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg/realsense.msg -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/msg
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvalue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from kinovasev/kinova_jointvalue.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvalue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from kinovasev/kinova_jointvalue.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevalue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from kinovasev/kinova_posevalue.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevalue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from kinovasev/kinova_posevalue.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvelocity.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from kinovasev/kinova_jointvelocity.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvelocity.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from kinovasev/kinova_jointvelocity.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevelocity.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from kinovasev/kinova_posevelocity.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevelocity.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from kinovasev/kinova_posevelocity.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_fingervalue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from kinovasev/kinova_fingervalue.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_fingervalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_fingervalue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from kinovasev/kinova_fingervalue.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_fingervalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_pose.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from kinovasev/kinova_wheelchair_pose.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_pose.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_pose.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from kinovasev/kinova_wheelchair_pose.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_pose.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_velocity.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from kinovasev/kinova_wheelchair_velocity.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_velocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_velocity.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from kinovasev/kinova_wheelchair_velocity.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_velocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv
 
 kinovasev_generate_messages_nodejs: kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/msg/realsense.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js
-kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/msg/realsense.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvalue.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevalue.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_jointvelocity.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_posevelocity.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_fingervalue.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_pose.js
+kinovasev_generate_messages_nodejs: /home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev/srv/kinova_wheelchair_velocity.js
 kinovasev_generate_messages_nodejs: kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build.make
 
 .PHONY : kinovasev_generate_messages_nodejs
@@ -122,10 +122,10 @@ kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build: kinovasev_gen
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build
 
 kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/kinovasev_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/kinovasev_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/clean
 
 kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/kinovasev /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/kinovasev /home/ziye01/lees_ros/kinova_ws/build/kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinovasev /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinovasev /home/ziye01/lees_ros/kinova_mvig/build/kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/depend
 

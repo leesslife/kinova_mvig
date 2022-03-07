@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/src/test_accuracy.cpp" "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.o"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/src/test_accuracy.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,18 +23,18 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/include"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/bullet"
-  "/home/ziye01/lees_ros/kinova_ws/devel/include"
-  "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/include"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/include"
+  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include"
   "/usr/include/eigen3"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/DependInfo.cmake"
+  "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

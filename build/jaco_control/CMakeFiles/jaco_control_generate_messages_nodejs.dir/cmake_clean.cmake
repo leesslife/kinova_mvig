@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_ws/devel/share/gennodejs/ros/jaco_control/msg/InteractionParams.js"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/jaco_control/msg/InteractionParams.js"
   "CMakeFiles/jaco_control_generate_messages_nodejs"
 )
 

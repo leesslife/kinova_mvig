@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Include any dependencies generated for this target.
 include kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/depend.make
@@ -58,17 +58,17 @@ include kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/progr
 include kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/flags.make
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o: /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o -c /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o: /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o -c /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.i"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp > CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.i
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp > CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.s"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp -o CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.s
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/nodes/kinova_interactive_control.cpp -o CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.s
 
 # Object files for target kinova_interactive_control
 kinova_interactive_control_OBJECTS = \
@@ -77,71 +77,71 @@ kinova_interactive_control_OBJECTS = \
 # External object files for target kinova_interactive_control
 kinova_interactive_control_EXTERNAL_OBJECTS =
 
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/build.make
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libinteractive_markers.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2_ros.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libactionlib.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libmessage_filters.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librostime.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libcpp_common.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /home/ziye01/lees_ros/kinova_ws/devel/lib/libkinova_driver.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libinteractive_markers.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2_ros.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libactionlib.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libmessage_filters.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librostime.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libcpp_common.so
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kinova_interactive_control.dir/link.txt --verbose=$(VERBOSE)
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/src/nodes/kinova_interactive_control.cpp.o
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/build.make
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libinteractive_markers.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2_ros.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libactionlib.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libmessage_filters.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librostime.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libcpp_common.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /home/ziye01/lees_ros/kinova_mvig/devel/lib/libkinova_driver.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libinteractive_markers.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2_ros.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libactionlib.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libmessage_filters.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libtf2.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/librostime.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /opt/ros/noetic/lib/libcpp_common.so
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control: kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kinova_interactive_control.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/build: /home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/kinova_interactive_control
+kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/build: /home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/kinova_interactive_control
 
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/build
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -P CMakeFiles/kinova_interactive_control.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -P CMakeFiles/kinova_interactive_control.dir/cmake_clean.cmake
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/clean
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver /home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/kinova_interactive_control.dir/depend
 

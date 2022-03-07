@@ -43,81 +43,81 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Utility rule file for kinovasev_generate_messages_eus.
 
 # Include the progress variables for this target.
 include kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/progress.make
 
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/msg/realsense.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l
-kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/manifest.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/msg/realsense.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l
+kinovasev/CMakeFiles/kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/manifest.l
 
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/msg/realsense.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/msg/realsense.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg/realsense.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from kinovasev/realsense.msg"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg/realsense.msg -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/msg
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/msg/realsense.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/msg/realsense.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg/realsense.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from kinovasev/realsense.msg"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg/realsense.msg -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/msg
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvalue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from kinovasev/kinova_jointvalue.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvalue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from kinovasev/kinova_jointvalue.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevalue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from kinovasev/kinova_posevalue.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevalue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from kinovasev/kinova_posevalue.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvelocity.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from kinovasev/kinova_jointvelocity.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_jointvelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvelocity.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from kinovasev/kinova_jointvelocity.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevelocity.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from kinovasev/kinova_posevelocity.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_posevelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevelocity.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from kinovasev/kinova_posevelocity.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevelocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_fingervalue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from kinovasev/kinova_fingervalue.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_fingervalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_fingervalue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from kinovasev/kinova_fingervalue.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_fingervalue.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_pose.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from kinovasev/kinova_wheelchair_pose.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_pose.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_pose.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from kinovasev/kinova_wheelchair_pose.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_pose.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l: /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_velocity.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from kinovasev/kinova_wheelchair_velocity.srv"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_ws/src/kinovasev/srv/kinova_wheelchair_velocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_ws/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_velocity.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from kinovasev/kinova_wheelchair_velocity.srv"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_velocity.srv -Ikinovasev:/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p kinovasev -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv
 
-/home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp manifest code for kinovasev"
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && ../catkin_generated/env_cached.sh /home/ziye01/miniconda3/envs/cg/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev kinovasev std_msgs
+/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp manifest code for kinovasev"
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev kinovasev std_msgs
 
 kinovasev_generate_messages_eus: kinovasev/CMakeFiles/kinovasev_generate_messages_eus
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/msg/realsense.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l
-kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_ws/devel/share/roseus/ros/kinovasev/manifest.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/msg/realsense.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvalue.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevalue.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_jointvelocity.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_posevelocity.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_fingervalue.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_pose.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/srv/kinova_wheelchair_velocity.l
+kinovasev_generate_messages_eus: /home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev/manifest.l
 kinovasev_generate_messages_eus: kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build.make
 
 .PHONY : kinovasev_generate_messages_eus
@@ -128,10 +128,10 @@ kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build: kinovasev_genera
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build
 
 kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/kinovasev_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/kinovasev_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/clean
 
 kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/kinovasev /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/kinovasev /home/ziye01/lees_ros/kinova_ws/build/kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinovasev /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinovasev /home/ziye01/lees_ros/kinova_mvig/build/kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/depend
 

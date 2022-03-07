@@ -2,7 +2,7 @@
 
 message(STATUS "jaco_control: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ijaco_control:/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ijaco_control:/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,9 +17,9 @@ add_custom_target(jaco_control_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
+get_filename_component(_filename "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
 add_custom_target(_jaco_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "jaco_control" "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" "geometry_msgs/Vector3:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "jaco_control" "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" "geometry_msgs/Vector3:geometry_msgs/Point"
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_jaco_control_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(jaco_control
-  "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg"
+  "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/jaco_control
@@ -49,7 +49,7 @@ add_custom_target(jaco_control_generate_messages_cpp
 add_dependencies(jaco_control_generate_messages jaco_control_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
+get_filename_component(_filename "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
 add_dependencies(jaco_control_generate_messages_cpp _jaco_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS jaco_control_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(jaco_control
-  "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg"
+  "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/jaco_control
@@ -82,7 +82,7 @@ add_custom_target(jaco_control_generate_messages_eus
 add_dependencies(jaco_control_generate_messages jaco_control_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
+get_filename_component(_filename "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
 add_dependencies(jaco_control_generate_messages_eus _jaco_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS jaco_control_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(jaco_control
-  "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg"
+  "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/jaco_control
@@ -115,7 +115,7 @@ add_custom_target(jaco_control_generate_messages_lisp
 add_dependencies(jaco_control_generate_messages jaco_control_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
+get_filename_component(_filename "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
 add_dependencies(jaco_control_generate_messages_lisp _jaco_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -128,7 +128,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS jaco_control_generate_messages_lisp
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(jaco_control
-  "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg"
+  "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/jaco_control
@@ -148,7 +148,7 @@ add_custom_target(jaco_control_generate_messages_nodejs
 add_dependencies(jaco_control_generate_messages jaco_control_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
+get_filename_component(_filename "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
 add_dependencies(jaco_control_generate_messages_nodejs _jaco_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -161,7 +161,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS jaco_control_generate_messages_node
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(jaco_control
-  "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg"
+  "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/jaco_control
@@ -181,7 +181,7 @@ add_custom_target(jaco_control_generate_messages_py
 add_dependencies(jaco_control_generate_messages jaco_control_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ziye01/lees_ros/kinova_ws/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
+get_filename_component(_filename "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg" NAME_WE)
 add_dependencies(jaco_control_generate_messages_py _jaco_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -250,7 +250,7 @@ if(TARGET sensor_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/jaco_control)
-  install(CODE "execute_process(COMMAND \"/home/ziye01/miniconda3/envs/cg/bin/python3\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/jaco_control\")")
+  install(CODE "execute_process(COMMAND \"/usr/bin/python3\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/jaco_control\")")
   # install generated code
   install(
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/jaco_control

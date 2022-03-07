@@ -1,4 +1,4 @@
 max_force_constrain:
-      force_max_x: 10.0
-      force_max_y: 10.0
-      force_max_z: 10.0
+      force_max_x: 30.0
+      force_max_y: 30.0
+      force_max_z: 30.0

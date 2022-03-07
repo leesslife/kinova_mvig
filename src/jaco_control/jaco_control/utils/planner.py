@@ -8,7 +8,7 @@
 
 import numpy as np
 import sys
-import trajectory
+from jaco_control.utils import trajectory
 import copy
 import matplotlib.pyplot as plt
 
@@ -79,9 +79,11 @@ class Planner:
         """
         # set up MoveIt! robot commander and move moveit_group commander
         moveit_commander.roscpp_initialize(sys.argv)
+        
         self.robot = moveit_commander.RobotCommander()
         self.move_group = moveit_commander.MoveGroupCommander("arm")
 
+       
         # set up MoveIt! moveit_scene interface
         self.scene = moveit_commander.PlanningSceneInterface()
 
@@ -99,6 +101,7 @@ class Planner:
         self.scene.add_box("table", table_position, (2.4, 2.4, 0.03))
 
         rospy.loginfo("MoveIt! init successful.")
+    
 
     def plan_moveit(self, position, orientation, start_joint_position=None, euler_flag=False, time_scale=1.0):
         """
@@ -122,12 +125,13 @@ class Planner:
 
         pose = self.create_pose(position, orientation, euler_flag=euler_flag)
         self.move_group.set_pose_target(pose)
-        plan = self.move_group.plan()
+        plan_success, traj, planning_time, error_code =self.move_group.plan()
         self.move_group.clear_pose_targets()
 
+
         # create the raw waypoints
-        raw_waypoints = np.array([p.positions for p in plan.joint_trajectory.points])
-        t_raw_waypoints = np.array([self.to_sec(p.time_from_start) for p in plan.joint_trajectory.points])
+        raw_waypoints = np.array([p.positions for p in traj.joint_trajectory.points])
+        t_raw_waypoints = np.array([self.to_sec(p.time_from_start) for p in traj.joint_trajectory.points])
 
         self.traj = trajectory.Trajectory(self.n_joints, raw_waypoints=raw_waypoints, t_raw_waypoints=t_raw_waypoints,
                                           time_scale=time_scale)

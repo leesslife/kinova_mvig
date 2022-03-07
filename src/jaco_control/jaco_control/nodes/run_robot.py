@@ -28,6 +28,7 @@ if __name__ == '__main__':
         if sys.argv[3] == 'test':
             # plan the test trajectory
             if sys.argv[1] == 'j2n6s300':
+
                 starting_position = [4.7, 3.5, 2., 4.7, 0., 1.57]
                 # traj_pos = np.array([[0.4, 0.4, 0.4, 0.5, 0.5, 0.5]])
                 traj_pos = np.array([[0., 0., 0., 0., 0., 0.]])

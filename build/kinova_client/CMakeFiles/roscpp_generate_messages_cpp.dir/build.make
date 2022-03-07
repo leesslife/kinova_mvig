@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Utility rule file for roscpp_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/build: roscpp_generate
 .PHONY : kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 
 kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/kinova_client && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova_client && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/kinova_client /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/kinova_client /home/ziye01/lees_ros/kinova_ws/build/kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinova_client /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinova_client /home/ziye01/lees_ros/kinova_mvig/build/kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova_client/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 

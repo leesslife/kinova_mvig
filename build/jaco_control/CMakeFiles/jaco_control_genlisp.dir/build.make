@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 # Utility rule file for jaco_control_genlisp.
 
@@ -63,10 +63,10 @@ jaco_control/CMakeFiles/jaco_control_genlisp.dir/build: jaco_control_genlisp
 .PHONY : jaco_control/CMakeFiles/jaco_control_genlisp.dir/build
 
 jaco_control/CMakeFiles/jaco_control_genlisp.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build/jaco_control && $(CMAKE_COMMAND) -P CMakeFiles/jaco_control_genlisp.dir/cmake_clean.cmake
+	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && $(CMAKE_COMMAND) -P CMakeFiles/jaco_control_genlisp.dir/cmake_clean.cmake
 .PHONY : jaco_control/CMakeFiles/jaco_control_genlisp.dir/clean
 
 jaco_control/CMakeFiles/jaco_control_genlisp.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_ws/src /home/ziye01/lees_ros/kinova_ws/src/jaco_control /home/ziye01/lees_ros/kinova_ws/build /home/ziye01/lees_ros/kinova_ws/build/jaco_control /home/ziye01/lees_ros/kinova_ws/build/jaco_control/CMakeFiles/jaco_control_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/jaco_control /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/jaco_control /home/ziye01/lees_ros/kinova_mvig/build/jaco_control/CMakeFiles/jaco_control_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jaco_control/CMakeFiles/jaco_control_genlisp.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_ws/src
+CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_ws/build
+CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_ws/build/CMakeFiles /home/ziye01/lees_ros/kinova_ws/build/kinovasev/CMakeFiles/progress.marks
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_ws/build/CMakeFiles 0
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles /home/ziye01/lees_ros/kinova_mvig/build/kinovasev/CMakeFiles/progress.marks
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/clean
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/preinstall
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/preinstall
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kinovasev/CMakeFiles/stop_run_kinova.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/stop_run_kinova.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/stop_run_kinova.dir/rule
 .PHONY : kinovasev/CMakeFiles/stop_run_kinova.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ stop_run_kinova: kinovasev/CMakeFiles/stop_run_kinova.dir/rule
 
 # fast build rule for target.
 stop_run_kinova/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/build
 .PHONY : stop_run_kinova/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_genpy.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_genpy.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_genpy.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_genpy.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ kinovasev_genpy: kinovasev/CMakeFiles/kinovasev_genpy.dir/rule
 
 # fast build rule for target.
 kinovasev_genpy/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_genpy.dir/build.make kinovasev/CMakeFiles/kinovasev_genpy.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_genpy.dir/build.make kinovasev/CMakeFiles/kinovasev_genpy.dir/build
 .PHONY : kinovasev_genpy/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ kinovasev_generate_messages_py: kinovasev/CMakeFiles/kinovasev_generate_messages
 
 # fast build rule for target.
 kinovasev_generate_messages_py/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_py.dir/build
 .PHONY : kinovasev_generate_messages_py/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_genlisp.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_genlisp.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_genlisp.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_genlisp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ kinovasev_genlisp: kinovasev/CMakeFiles/kinovasev_genlisp.dir/rule
 
 # fast build rule for target.
 kinovasev_genlisp/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_genlisp.dir/build.make kinovasev/CMakeFiles/kinovasev_genlisp.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_genlisp.dir/build.make kinovasev/CMakeFiles/kinovasev_genlisp.dir/build
 .PHONY : kinovasev_genlisp/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/BiCodePose.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/BiCodePose.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/BiCodePose.dir/rule
 .PHONY : kinovasev/CMakeFiles/BiCodePose.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ BiCodePose: kinovasev/CMakeFiles/BiCodePose.dir/rule
 
 # fast build rule for target.
 BiCodePose/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/build
 .PHONY : BiCodePose/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ kinovasev_generate_messages_lisp: kinovasev/CMakeFiles/kinovasev_generate_messag
 
 # fast build rule for target.
 kinovasev_generate_messages_lisp/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_lisp.dir/build
 .PHONY : kinovasev_generate_messages_lisp/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_generate_messages.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ kinovasev_generate_messages: kinovasev/CMakeFiles/kinovasev_generate_messages.di
 
 # fast build rule for target.
 kinovasev_generate_messages/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages.dir/build
 .PHONY : kinovasev_generate_messages/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ _kinovasev_generate_messages_check_deps_realsense: kinovasev/CMakeFiles/_kinovas
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_realsense/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_realsense.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_realsense/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _kinovasev_generate_messages_check_deps_kinova_posevelocity: kinovasev/CMakeFile
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_posevelocity/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevelocity.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_posevelocity/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_gencpp.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_gencpp.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_gencpp.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_gencpp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ kinovasev_gencpp: kinovasev/CMakeFiles/kinovasev_gencpp.dir/rule
 
 # fast build rule for target.
 kinovasev_gencpp/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_gencpp.dir/build.make kinovasev/CMakeFiles/kinovasev_gencpp.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_gencpp.dir/build.make kinovasev/CMakeFiles/kinovasev_gencpp.dir/build
 .PHONY : kinovasev_gencpp/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_geneus.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_geneus.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_geneus.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_geneus.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ kinovasev_geneus: kinovasev/CMakeFiles/kinovasev_geneus.dir/rule
 
 # fast build rule for target.
 kinovasev_geneus/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_geneus.dir/build.make kinovasev/CMakeFiles/kinovasev_geneus.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_geneus.dir/build.make kinovasev/CMakeFiles/kinovasev_geneus.dir/build
 .PHONY : kinovasev_geneus/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _kinovasev_generate_messages_check_deps_kinova_jointvalue: kinovasev/CMakeFiles/
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_jointvalue/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvalue.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_jointvalue/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _kinovasev_generate_messages_check_deps_kinova_posevalue: kinovasev/CMakeFiles/_
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_posevalue/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_posevalue.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_posevalue/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ _kinovasev_generate_messages_check_deps_kinova_jointvelocity: kinovasev/CMakeFil
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_jointvelocity/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_jointvelocity.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_jointvelocity/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ kinovasev_generate_messages_eus: kinovasev/CMakeFiles/kinovasev_generate_message
 
 # fast build rule for target.
 kinovasev_generate_messages_eus/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_eus.dir/build
 .PHONY : kinovasev_generate_messages_eus/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_gennodejs.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_gennodejs.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_gennodejs.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ kinovasev_gennodejs: kinovasev/CMakeFiles/kinovasev_gennodejs.dir/rule
 
 # fast build rule for target.
 kinovasev_gennodejs/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_gennodejs.dir/build.make kinovasev/CMakeFiles/kinovasev_gennodejs.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_gennodejs.dir/build.make kinovasev/CMakeFiles/kinovasev_gennodejs.dir/build
 .PHONY : kinovasev_gennodejs/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ kinovasev_generate_messages_nodejs: kinovasev/CMakeFiles/kinovasev_generate_mess
 
 # fast build rule for target.
 kinovasev_generate_messages_nodejs/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_nodejs.dir/build
 .PHONY : kinovasev_generate_messages_nodejs/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ _kinovasev_generate_messages_check_deps_kinova_fingervalue: kinovasev/CMakeFiles
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_fingervalue/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_fingervalue.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_fingervalue/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ _kinovasev_generate_messages_check_deps_kinova_wheelchair_pose: kinovasev/CMakeF
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_wheelchair_pose/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_pose.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_wheelchair_pose/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/rule
 .PHONY : kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity: kinovasev/CM
 
 # fast build rule for target.
 _kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/build.make kinovasev/CMakeFiles/_kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity.dir/build
 .PHONY : _kinovasev_generate_messages_check_deps_kinova_wheelchair_velocity/fast
 
 # Convenience name for target.
 kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/rule
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/rule
 .PHONY : kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,7 +479,7 @@ kinovasev_generate_messages_cpp: kinovasev/CMakeFiles/kinovasev_generate_message
 
 # fast build rule for target.
 kinovasev_generate_messages_cpp/fast:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/build
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/build.make kinovasev/CMakeFiles/kinovasev_generate_messages_cpp.dir/build
 .PHONY : kinovasev_generate_messages_cpp/fast
 
 src/BiCodePose.o: src/BiCodePose.cpp.o
@@ -488,7 +488,7 @@ src/BiCodePose.o: src/BiCodePose.cpp.o
 
 # target to build an object file
 src/BiCodePose.cpp.o:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.o
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.o
 .PHONY : src/BiCodePose.cpp.o
 
 src/BiCodePose.i: src/BiCodePose.cpp.i
@@ -497,7 +497,7 @@ src/BiCodePose.i: src/BiCodePose.cpp.i
 
 # target to preprocess a source file
 src/BiCodePose.cpp.i:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.i
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.i
 .PHONY : src/BiCodePose.cpp.i
 
 src/BiCodePose.s: src/BiCodePose.cpp.s
@@ -506,7 +506,7 @@ src/BiCodePose.s: src/BiCodePose.cpp.s
 
 # target to generate assembly for a file
 src/BiCodePose.cpp.s:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.s
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/BiCodePose.dir/build.make kinovasev/CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.s
 .PHONY : src/BiCodePose.cpp.s
 
 src/stop_run_kinova.o: src/stop_run_kinova.cpp.o
@@ -515,7 +515,7 @@ src/stop_run_kinova.o: src/stop_run_kinova.cpp.o
 
 # target to build an object file
 src/stop_run_kinova.cpp.o:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.o
 .PHONY : src/stop_run_kinova.cpp.o
 
 src/stop_run_kinova.i: src/stop_run_kinova.cpp.i
@@ -524,7 +524,7 @@ src/stop_run_kinova.i: src/stop_run_kinova.cpp.i
 
 # target to preprocess a source file
 src/stop_run_kinova.cpp.i:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.i
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.i
 .PHONY : src/stop_run_kinova.cpp.i
 
 src/stop_run_kinova.s: src/stop_run_kinova.cpp.s
@@ -533,7 +533,7 @@ src/stop_run_kinova.s: src/stop_run_kinova.cpp.s
 
 # target to generate assembly for a file
 src/stop_run_kinova.cpp.s:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.s
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinovasev/CMakeFiles/stop_run_kinova.dir/build.make kinovasev/CMakeFiles/stop_run_kinova.dir/src/stop_run_kinova.cpp.s
 .PHONY : src/stop_run_kinova.cpp.s
 
 # Help Target
@@ -587,6 +587,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ziye01/lees_ros/kinova_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

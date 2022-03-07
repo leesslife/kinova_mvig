@@ -242,8 +242,25 @@ set(OPT_DIR /home/ziye01/realsence/opencv_aruco/install/lib)
 find_library(REALSENSE_OPT_LIB realscene_cam_opt PATHS ${OPT_DIR})
 
 
+
 add_executable(BiCodePose src/BiCodePose.cpp)
 target_link_libraries(BiCodePose ${catkin_LIBRARIES} ${OpenCV_LIBS} ${REALSENSE_OPT_LIB} ${REALSENSE2_FOUND})
+add_dependencies(BiCodePose ${kinovasev_EXPORTED_TARGETS} 
+                            ${catkin_EXPORTED_TARGETS} 
+                            ${kinova_msgs_EXPORTED_TARGETS} 
+                            ${catkin_EXPORTED_TARGETS}
+                            kinovasev_generate_messages_cpp
+                            kinovasev_gencpp  
+                            kinova_msgs_generate_messages_cpp
+                            kinova_msgs_gencpp)
 
 add_executable(stop_run_kinova src/stop_run_kinova.cpp)
 target_link_libraries(stop_run_kinova ${catkin_LIBRARIES})
+add_dependencies(stop_run_kinova  ${kinovasev_EXPORTED_TARGETS} 
+                                  ${catkin_EXPORTED_TARGETS} 
+                                  ${kinova_msgs_EXPORTED_TARGETS} 
+                                  ${catkin_EXPORTED_TARGETS}
+                                  kinovasev_generate_messages_cpp
+                                  kinovasev_gencpp  
+                                  kinova_msgs_generate_messages_cpp
+                                  kinova_msgs_gencpp)

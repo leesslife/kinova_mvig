@@ -83,4 +83,4 @@ if __name__ == '__main__':
 
     moveFingers ([1,1,1],prefix,nbfingers)
   except rospy.ROSInterruptException:
-    print "program interrupted before completion"
+    print("program interrupted before completion")

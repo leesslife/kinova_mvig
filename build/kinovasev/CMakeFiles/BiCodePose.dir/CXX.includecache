@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ziye01/lees_ros/kinova_ws/devel/include/kinovasev/realsense.h
+/home/ziye01/lees_ros/kinova_mvig/devel/include/kinovasev/realsense.h
 string
 -
 vector
@@ -22,11 +22,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/BiCodePose.cpp
+/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/BiCodePose.cpp
 ros/ros.h
-/home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/ros/ros.h
+/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/ros/ros.h
 std_msgs/String.h
-/home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/std_msgs/String.h
+/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/std_msgs/String.h
 sstream
 -
 iostream
@@ -38,7 +38,7 @@ opencv2/aruco.hpp
 opencv2/calib3d/calib3d.hpp
 -
 opencv2/core/core.hpp
-/home/ziye01/lees_ros/kinova_ws/src/kinovasev/src/opencv2/core/core.hpp
+/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/src/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
 -
 opencv2/imgproc/imgproc.hpp

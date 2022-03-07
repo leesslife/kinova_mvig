@@ -13,5 +13,7 @@
         <node pkg="kinovasev" name="kino_mvig_stop" type="stop_run_kinova" output="screen"/>
         <rosparam file="$(find kinovasev)/force_max_set.yaml" command="load"/>
     </group>
+
+    <!-- <include file="$(find j2s7s300_moveit_config)/launch/j2s7s300_demo.launch"></include>-->
     
 </launch>

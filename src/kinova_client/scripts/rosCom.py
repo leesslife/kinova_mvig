@@ -14,8 +14,8 @@ import math
 from kinova_msgs.srv import *
 import sys
 sys.path.append('./')
-from kinova_client import joint_control_client,finger_control_client
-from torque_control import *
+from controller.kinova_client import joint_control_client,finger_control_client
+from controller.torque_control import *
 from kinovasev.srv import kinova_jointvalue,kinova_posevalue
 from kinovasev.srv import kinova_fingervalue
 from kinovasev.srv import kinova_jointvelocity,kinova_posevelocity
@@ -78,4 +78,4 @@ if __name__ == '__main__':
     ZeroTorque()
 
     
-    runCOMParameterEstimation()
+    #runCOMParameterEstimation()

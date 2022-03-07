@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_ws/devel/share/common-lisp/ros/jaco_control/msg/InteractionParams.lisp"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/share/common-lisp/ros/jaco_control/msg/InteractionParams.lisp"
   "CMakeFiles/jaco_control_generate_messages_lisp"
 )
 

@@ -9,7 +9,7 @@
 import os
 import numpy as np
 import pybullet
-import pid
+from jaco_control.utils import pid
 import trajectory
 
 # ROS libs
@@ -782,7 +782,7 @@ class Robot:
 
         self.impedance_controller.set_gains(P_joint, I_joint, D_joint)
 
-    def impedance_control(self, traj, use_idyn=True, control_rate=50, sleep_time=10.):
+    def impedance_control(self, traj, use_idyn=True, control_rate=50, sleep_time=10):
         """
         NOTE: Works on both the real and Gazebo robot.
         Controls the robot through waypoints with impedance controller. If use_idyn is set to true, the inverse dynamics
@@ -827,7 +827,7 @@ class Robot:
             # get the index of the next waypoint
             elapsed_time = rospy.get_time() - start_time
             index = traj.get_next_waypoint(elapsed_time)
-            if index > len(traj.waypoints):
+            if index >= len(traj.waypoints):
                 break
 
             # compute the error term and update the PID controller

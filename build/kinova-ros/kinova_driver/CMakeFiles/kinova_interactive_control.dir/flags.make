@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"kinova_driver\"
 
-CXX_INCLUDES = -I/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_driver/BEFORE -isystem /home/ziye01/lees_ros/kinova_ws/devel/include 
+CXX_INCLUDES = -I/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/BEFORE -isystem /home/ziye01/lees_ros/kinova_mvig/devel/include 
 

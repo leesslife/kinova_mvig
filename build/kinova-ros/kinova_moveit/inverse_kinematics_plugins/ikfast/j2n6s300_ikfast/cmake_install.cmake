@@ -1,8 +1,8 @@
-# Install script for directory: /home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast
+# Install script for directory: /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_mvig/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/catkin_generated/installspace/j2n6s300_ikfast.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/catkin_generated/installspace/j2n6s300_ikfast.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/j2n6s300_ikfast/cmake" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/catkin_generated/installspace/j2n6s300_ikfastConfig.cmake"
-    "/home/ziye01/lees_ros/kinova_ws/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/catkin_generated/installspace/j2n6s300_ikfastConfig-version.cmake"
+    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/catkin_generated/installspace/j2n6s300_ikfastConfig.cmake"
+    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/catkin_generated/installspace/j2n6s300_ikfastConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/j2n6s300_ikfast" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/j2n6s300_ikfast" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libj2n6s300_arm_moveit_ikfast_plugin.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ziye01/lees_ros/kinova_ws/devel/lib/libj2n6s300_arm_moveit_ikfast_plugin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ziye01/lees_ros/kinova_mvig/devel/lib/libj2n6s300_arm_moveit_ikfast_plugin.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libj2n6s300_arm_moveit_ikfast_plugin.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libj2n6s300_arm_moveit_ikfast_plugin.so")
     file(RPATH_CHANGE
@@ -76,6 +76,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/j2n6s300_ikfast" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/j2n6s300_arm_moveit_ikfast_plugin_description.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/j2n6s300_ikfast" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/j2n6s300_arm_moveit_ikfast_plugin_description.xml")
 endif()
 

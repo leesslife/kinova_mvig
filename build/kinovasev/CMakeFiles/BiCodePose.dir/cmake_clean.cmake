@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/BiCodePose"
-  "/home/ziye01/lees_ros/kinova_ws/devel/lib/kinovasev/BiCodePose.pdb"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/BiCodePose"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinovasev/BiCodePose.pdb"
   "CMakeFiles/BiCodePose.dir/src/BiCodePose.cpp.o"
 )
 

@@ -83,6 +83,7 @@
     <run_depend>robot_state_publisher</run_depend>
     <run_depend>rqt_gui</run_depend>
     <run_depend>effort_controllers</run_depend>
+    <run_depend>kinova_client</run_depend>
 
     <!-- The export tag contains other, unspecified, tags -->
     <export>

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/joint_trajectory_action_server"
-  "/home/ziye01/lees_ros/kinova_ws/devel/lib/kinova_driver/joint_trajectory_action_server.pdb"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/joint_trajectory_action_server"
+  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_driver/joint_trajectory_action_server.pdb"
   "CMakeFiles/joint_trajectory_action_server.dir/src/joint_trajectory_action/joint_trajectory_action_server.cpp.o"
 )
 

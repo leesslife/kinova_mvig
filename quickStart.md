@@ -20,6 +20,7 @@ roslaunch wheelchair_pkg wheelchair_controller.launch
 * 启动设备  
 ```
 roslaunch kinova_bringup kinova_robot.launch kinova_robotType:=j2s7s300
+roslaunch kinova_gazebo robot_launch.launch kinova_robotType:=j2ss7s300 use_effort_controller:=true  #Gazebo 防真
 ```
 
 ## 加载转接服务器  
@@ -28,6 +29,7 @@ roslaunch kinovasev kinovs_server_mvig.launch
 rosrun kinovasev kinova_server   #开启转接服务器
 rosrun kinovasev BiCodePose     # 开启摄像头参数
 rosrun kinovasev stop_run_kinova  #开启力控参数
+
 ```
 
 ## 重力补偿参数
