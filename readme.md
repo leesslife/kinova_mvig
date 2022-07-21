@@ -1,48 +1,57 @@
 
-## 激活主机环境  
-cd /home/ziye01/lees_ros/kinova_ws    
-source env.sh  
-## 运行主机ros服务器   
-roscore 
+# MVIG_Kinova_Control
+## platform 
+* ubuntu 20.04
+* ros noetic
 
+## 轮椅控制
+####  激活主机环境，并启动ros服务器
 
-## 确保以下环境变量已经被设置  
+```bash  
 export ROS_HOSTNAME=192.168.2.241(本机IP)
 export ROS_MASTER_URI=http://192.168.2.241:11311(Master IP ,也就是PC_IP)
+cd /home/path_to/kinova_mvig    
+source env.sh 
+roscore
+``` 
 
-
-## 激活从机环境
+#### 激活从机环境
+```bash
 cd /home/wmrm/lees_ws/  
 source env.sh
-## 运行wheelchair轮椅启动    
-roslaunch wheelchair_pkg wheelchair_controller.launch    
-
-
-## 加载机器手臂的驱动  
-* 启动设备  
-```
-roslaunch kinova_bringup kinova_robot.launch kinova_robotType:=j2s7s300 use_urdf:=true
 ```
 
-## 加载转接服务器  
-```
-roslaunch kinovasev start.sh
-```
-
-* 读取设备节点参数  
-* 单位是degree
-```
-rostopic echo /j2s7s300_driver/out/joint_angles
+#### 控制接口 
+```bash
+cd kinova_client/kinovasev/scripts/kinova_server.py
 ```
 
-# 读取末端的位置信息   
-* x(m),y(m),z(m),r(rad),p(rad),y(rad)  
-```
-rostopic echo /j2s7s300_driver/out/state/tool_pose
+#### 运行wheelchair轮椅启动    
+```bash
+roslaunch wheelchair_pkg wheelchair_controller.launch  
 ```
 
-# 读取末端扭矩
-* x,y,z,r,p,y   
+
+## 手臂控制
+
+#### 启动服务
+* 首先得激活环境     
+```bash
+source /top/devel/setup.bash
 ```
-rostopic echo /j2s7s300_driver/out/state/tool_wrench
+* 启动设备ros服务   
+```bash
+roslaunch kinovasev kinova_server_mvig.launch
 ```
+* 使用案例
+1. 手臂控制案例
+```bash
+cd /top/src/kinova_client
+```
+文件1：example.py->kinova_client.py         
+手臂控制方法    
+文件2：example.py->read_kinova.py    
+手臂数据读取方法   
+
+2. 手臂补偿
+文件3:rosCompy
