@@ -53,5 +53,28 @@ cd /top/src/kinova_client
 文件2：example.py->read_kinova.py    
 手臂数据读取方法   
 
-2. 手臂补偿
+2. 手臂补偿矫正
 文件3:rosCompy
+
+3. 手臂最大力控制
+```bash
+# 力控制设定在如下文件
+cd /src/kinovasev/force_max_set.yaml # 单位牛/N
+```
+
+也可以在程序过程中进行动态设置
+```python
+# /src/kinova_client/example2.py
+# 状态生成器
+RS=RunStatusGenerator()
+# 手动强制停止设备启动
+RS.Stop()
+# 手动重新启动设备，因为设备超过最大力而停止可以使用命令进行重启
+RS.Start()
+# 手动设定最大力，三个方向
+RS.SendMaxForce(max_x=10.0,max_y=10.0,max_z=10.0)
+# 查看最大力
+pos=RS.getMaxForce()
+print(pos)
+RS.Start()
+```

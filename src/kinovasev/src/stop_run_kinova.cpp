@@ -22,7 +22,7 @@ void listensorCallback(const geometry_msgs::WrenchStamped& msg)
         if (client.call(stop))
         {
             ROS_INFO("maxxforce:[%f]-------maxyforce:[%f]----------maxzforce:[%f]",map_force_contrain["force_max_x"],map_force_contrain["force_max_y"],map_force_contrain["force_max_z"]);
-            ROS_INFO("kinova is stop for too large force,you cat use rosservice /j2s3s700_driver/in/start ,run it!");
+            ROS_INFO("kinova is stop for too large force,you cat use rosservice call /j2s7s300_driver/in/start ,run it!");
         }
     }
 }
