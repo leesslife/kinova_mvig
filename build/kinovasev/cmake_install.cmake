@@ -1,8 +1,8 @@
-# Install script for directory: /home/ziye01/lees_ros/kinova_mvig/src/kinovasev
+# Install script for directory: /home/ziye01/kinova_mvig/src/kinovasev
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_mvig/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ziye01/kinova_mvig/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,69 +38,69 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ziye01/lees_ros/kinova_mvig/build/kinovasev/catkin_generated/safe_execute_install.cmake")
+  include("/home/ziye01/kinova_mvig/build/kinovasev/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/msg" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/msg/realsense.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/msg" TYPE FILE FILES "/home/ziye01/kinova_mvig/src/kinovasev/msg/realsense.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/srv" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvalue.srv"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevalue.srv"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_jointvelocity.srv"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_posevelocity.srv"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_fingervalue.srv"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_pose.srv"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_velocity.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_jointvalue.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_posevalue.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_jointvelocity.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_posevelocity.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_fingervalue.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_pose.srv"
+    "/home/ziye01/kinova_mvig/src/kinovasev/srv/kinova_wheelchair_velocity.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/cmake" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasev-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/cmake" TYPE FILE FILES "/home/ziye01/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasev-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/devel/include/kinovasev")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/devel/include/kinovasev")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/devel/share/roseus/ros/kinovasev")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/devel/share/roseus/ros/kinovasev")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/devel/share/common-lisp/ros/kinovasev")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/devel/share/common-lisp/ros/kinovasev")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/devel/share/gennodejs/ros/kinovasev")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/devel/share/gennodejs/ros/kinovasev")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/kinovasev")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/kinovasev")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/kinovasev")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/kinovasev")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasev.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasev.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/cmake" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasev-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/cmake" TYPE FILE FILES "/home/ziye01/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasev-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev/cmake" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasevConfig.cmake"
-    "/home/ziye01/lees_ros/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasevConfig-version.cmake"
+    "/home/ziye01/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasevConfig.cmake"
+    "/home/ziye01/kinova_mvig/build/kinovasev/catkin_generated/installspace/kinovasevConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinovasev/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinovasev" TYPE FILE FILES "/home/ziye01/kinova_mvig/src/kinovasev/package.xml")
 endif()
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/joint_trajectory_action/joint_trajectory_action_server.cpp" "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/joint_trajectory_action_server.dir/src/joint_trajectory_action/joint_trajectory_action_server.cpp.o"
+  "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_driver/src/joint_trajectory_action/joint_trajectory_action_server.cpp" "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_driver/CMakeFiles/joint_trajectory_action_server.dir/src/joint_trajectory_action/joint_trajectory_action_server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,11 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include"
+  "/home/ziye01/kinova_mvig/devel/include"
+  "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_driver/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/BEFORE"
-  "/home/ziye01/lees_ros/kinova_mvig/devel/include"
   )
 
 # Targets to which this target links.

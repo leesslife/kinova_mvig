@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 # Utility rule file for kinovasev_genpy.
 
@@ -63,10 +63,10 @@ kinovasev/CMakeFiles/kinovasev_genpy.dir/build: kinovasev_genpy
 .PHONY : kinovasev/CMakeFiles/kinovasev_genpy.dir/build
 
 kinovasev/CMakeFiles/kinovasev_genpy.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/kinovasev_genpy.dir/cmake_clean.cmake
+	cd /home/ziye01/kinova_mvig/build/kinovasev && $(CMAKE_COMMAND) -P CMakeFiles/kinovasev_genpy.dir/cmake_clean.cmake
 .PHONY : kinovasev/CMakeFiles/kinovasev_genpy.dir/clean
 
 kinovasev/CMakeFiles/kinovasev_genpy.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinovasev /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinovasev /home/ziye01/lees_ros/kinova_mvig/build/kinovasev/CMakeFiles/kinovasev_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/kinova_mvig/src /home/ziye01/kinova_mvig/src/kinovasev /home/ziye01/kinova_mvig/build /home/ziye01/kinova_mvig/build/kinovasev /home/ziye01/kinova_mvig/build/kinovasev/CMakeFiles/kinovasev_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinovasev/CMakeFiles/kinovasev_genpy.dir/depend
 

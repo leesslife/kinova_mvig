@@ -1,8 +1,8 @@
-# Install script for directory: /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_description
+# Install script for directory: /home/ziye01/kinova_mvig/src/kinova-ros/kinova_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_mvig/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ziye01/kinova_mvig/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,28 +38,28 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description/cmake" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig.cmake"
-    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig-version.cmake"
+    "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig.cmake"
+    "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_description/catkin_generated/installspace/kinova_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE FILE FILES "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_description/launch"
-    "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_description/urdf"
+    "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_description/launch"
+    "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_description/urdf"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_description/meshes" FILES_MATCHING REGEX "/[^/]*\\.dae$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_description" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_description/meshes" FILES_MATCHING REGEX "/[^/]*\\.dae$")
 endif()
 

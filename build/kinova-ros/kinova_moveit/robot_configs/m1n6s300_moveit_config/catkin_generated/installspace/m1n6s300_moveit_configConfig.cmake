@@ -67,14 +67,14 @@ set(m1n6s300_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(m1n6s300_moveit_config_SOURCE_PREFIX /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/robot_configs/m1n6s300_moveit_config)
-  set(m1n6s300_moveit_config_DEVEL_PREFIX /home/ziye01/lees_ros/kinova_mvig/devel)
+  set(m1n6s300_moveit_config_SOURCE_PREFIX /home/ziye01/kinova_mvig/src/kinova-ros/kinova_moveit/robot_configs/m1n6s300_moveit_config)
+  set(m1n6s300_moveit_config_DEVEL_PREFIX /home/ziye01/kinova_mvig/devel)
   set(m1n6s300_moveit_config_INSTALL_PREFIX "")
   set(m1n6s300_moveit_config_PREFIX ${m1n6s300_moveit_config_DEVEL_PREFIX})
 else()
   set(m1n6s300_moveit_config_SOURCE_PREFIX "")
   set(m1n6s300_moveit_config_DEVEL_PREFIX "")
-  set(m1n6s300_moveit_config_INSTALL_PREFIX /home/ziye01/lees_ros/kinova_mvig/install)
+  set(m1n6s300_moveit_config_INSTALL_PREFIX /home/ziye01/kinova_mvig/install)
   set(m1n6s300_moveit_config_PREFIX ${m1n6s300_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ziye01/lees_ros/kinova_mvig/install/lib;/home/ziye01/lees_ros/kinova_mvig/devel/lib;/home/ziye01/lees_ros/rosl/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ziye01/kinova_mvig/install/lib;/home/ziye01/rfmoveit/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(m1n6s300_moveit_config_LIBRARIES ${m1n6s300_moveit_config_LIBRARIES})
 
   _list_append_unique(m1n6s300_moveit_config_LIBRARY_DIRS ${${m1n6s300_moveit_config_dep}_LIBRARY_DIRS})
-  list(APPEND m1n6s300_moveit_config_EXPORTED_TARGETS ${${m1n6s300_moveit_config_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(m1n6s300_moveit_config_EXPORTED_TARGETS ${${m1n6s300_moveit_config_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

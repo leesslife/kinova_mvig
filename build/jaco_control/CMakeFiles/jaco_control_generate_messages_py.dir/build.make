@@ -43,35 +43,35 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 # Utility rule file for jaco_control_generate_messages_py.
 
 # Include the progress variables for this target.
 include jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/progress.make
 
-jaco_control/CMakeFiles/jaco_control_generate_messages_py: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py
-jaco_control/CMakeFiles/jaco_control_generate_messages_py: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py
+jaco_control/CMakeFiles/jaco_control_generate_messages_py: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py
+jaco_control/CMakeFiles/jaco_control_generate_messages_py: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py
 
 
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG jaco_control/InteractionParams"
-	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg/InteractionParams.msg -Ijaco_control:/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p jaco_control -o /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /home/ziye01/kinova_mvig/src/jaco_control/msg/InteractionParams.msg
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG jaco_control/InteractionParams"
+	cd /home/ziye01/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ziye01/kinova_mvig/src/jaco_control/msg/InteractionParams.msg -Ijaco_control:/home/ziye01/kinova_mvig/src/jaco_control/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p jaco_control -o /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg
 
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for jaco_control"
-	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg --initpy
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for jaco_control"
+	cd /home/ziye01/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg --initpy
 
 jaco_control_generate_messages_py: jaco_control/CMakeFiles/jaco_control_generate_messages_py
-jaco_control_generate_messages_py: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py
-jaco_control_generate_messages_py: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py
+jaco_control_generate_messages_py: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/_InteractionParams.py
+jaco_control_generate_messages_py: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/msg/__init__.py
 jaco_control_generate_messages_py: jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/build.make
 
 .PHONY : jaco_control_generate_messages_py
@@ -82,10 +82,10 @@ jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/build: jaco_contro
 .PHONY : jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/build
 
 jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && $(CMAKE_COMMAND) -P CMakeFiles/jaco_control_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ziye01/kinova_mvig/build/jaco_control && $(CMAKE_COMMAND) -P CMakeFiles/jaco_control_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/clean
 
 jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/jaco_control /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/jaco_control /home/ziye01/lees_ros/kinova_mvig/build/jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/kinova_mvig/src /home/ziye01/kinova_mvig/src/jaco_control /home/ziye01/kinova_mvig/build /home/ziye01/kinova_mvig/build/jaco_control /home/ziye01/kinova_mvig/build/jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jaco_control/CMakeFiles/jaco_control_generate_messages_py.dir/depend
 

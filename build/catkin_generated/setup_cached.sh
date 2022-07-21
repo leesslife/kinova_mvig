@@ -7,5 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export PATH='/opt/ros/noetic/bin:/home/ziye01/miniconda3/envs/cg/bin:/home/ziye01/miniconda3/condabin:/home/ziye01/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.0/bin'
-export PWD='/home/ziye01/lees_ros/kinova_mvig/build'
+export CMAKE_PREFIX_PATH="/home/ziye01/kinova_mvig/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/ziye01/kinova_mvig/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/ziye01/kinova_mvig/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/ziye01/kinova_mvig/build'
+export PYTHONPATH="/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ziye01/kinova_mvig/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/ziye01/kinova_mvig/src:$ROS_PACKAGE_PATH"

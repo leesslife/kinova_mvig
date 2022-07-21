@@ -67,14 +67,14 @@ set(kinovasev_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(kinovasev_SOURCE_PREFIX /home/ziye01/lees_ros/kinova_mvig/src/kinovasev)
-  set(kinovasev_DEVEL_PREFIX /home/ziye01/lees_ros/kinova_mvig/devel)
+  set(kinovasev_SOURCE_PREFIX /home/ziye01/kinova_mvig/src/kinovasev)
+  set(kinovasev_DEVEL_PREFIX /home/ziye01/kinova_mvig/devel)
   set(kinovasev_INSTALL_PREFIX "")
   set(kinovasev_PREFIX ${kinovasev_DEVEL_PREFIX})
 else()
   set(kinovasev_SOURCE_PREFIX "")
   set(kinovasev_DEVEL_PREFIX "")
-  set(kinovasev_INSTALL_PREFIX /home/ziye01/lees_ros/kinova_mvig/install)
+  set(kinovasev_INSTALL_PREFIX /home/ziye01/kinova_mvig/install)
   set(kinovasev_PREFIX ${kinovasev_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ziye01/lees_ros/kinova_mvig/install/lib;/home/ziye01/lees_ros/kinova_mvig/devel/lib;/home/ziye01/lees_ros/rosl/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ziye01/kinova_mvig/install/lib;/home/ziye01/rfmoveit/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(kinovasev_LIBRARIES ${kinovasev_LIBRARIES})
 
   _list_append_unique(kinovasev_LIBRARY_DIRS ${${kinovasev_dep}_LIBRARY_DIRS})
-  list(APPEND kinovasev_EXPORTED_TARGETS ${${kinovasev_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(kinovasev_EXPORTED_TARGETS ${${kinovasev_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "kinovasev-msg-extras.cmake")

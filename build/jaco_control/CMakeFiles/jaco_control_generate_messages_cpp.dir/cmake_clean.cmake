@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/InteractionParams.h"
+  "/home/ziye01/kinova_mvig/devel/include/jaco_control/InteractionParams.h"
   "CMakeFiles/jaco_control_generate_messages_cpp"
 )
 

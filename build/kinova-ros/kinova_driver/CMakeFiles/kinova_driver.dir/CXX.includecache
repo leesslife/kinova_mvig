@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ziye01/lees_ros/kinova_mvig/devel/include/kinova_msgs/FingerPosition.h
+/home/ziye01/kinova_mvig/devel/include/kinova_msgs/FingerPosition.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ziye01/lees_ros/kinova_mvig/devel/include/kinova_msgs/JointAngles.h
+/home/ziye01/kinova_mvig/devel/include/kinova_msgs/JointAngles.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ziye01/lees_ros/kinova_mvig/devel/include/kinova_msgs/KinovaPose.h
+/home/ziye01/kinova_mvig/devel/include/kinova_msgs/KinovaPose.h
 string
 -
 vector
@@ -54,67 +54,9 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/Kinova.API.EthCommLayerUbuntu.h
-vector
--
+/home/ziye01/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/KinovaTypes.h
 
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/Kinova.API.EthCommandLayerUbuntu.h
-vector
--
-KinovaTypes.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/KinovaTypes.h
-Kinova.API.EthCommLayerUbuntu.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/Kinova.API.EthCommLayerUbuntu.h
-stdio.h
--
-
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/Kinova.API.USBCommLayerUbuntu.h
-vector
--
-
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/Kinova.API.USBCommandLayerUbuntu.h
-vector
--
-KinovaTypes.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/KinovaTypes.h
-Kinova.API.USBCommLayerUbuntu.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/Kinova.API.USBCommLayerUbuntu.h
-stdio.h
--
-
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova/KinovaTypes.h
-
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova_api.h
-dlfcn.h
--
-ros/ros.h
--
-iostream
--
-kinova/Kinova.API.USBCommandLayerUbuntu.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova/Kinova.API.USBCommandLayerUbuntu.h
-kinova/Kinova.API.EthCommandLayerUbuntu.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova/Kinova.API.EthCommandLayerUbuntu.h
-kinova/KinovaTypes.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova/KinovaTypes.h
-
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova_comm.h
-boost/thread/recursive_mutex.hpp
--
-kinova/KinovaTypes.h
--
-kinova_driver/kinova_ros_types.h
--
-kinova/KinovaTypes.h
--
-kinova/Kinova.API.USBCommLayerUbuntu.h
--
-kinova/Kinova.API.USBCommandLayerUbuntu.h
--
-kinova_driver/kinova_api.h
--
-
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova_ros_types.h
+/home/ziye01/kinova_mvig/src/kinova-ros/kinova_driver/include/kinova_driver/kinova_ros_types.h
 kinova/KinovaTypes.h
 -
 geometry_msgs/Pose.h
@@ -132,18 +74,18 @@ tf/tf.h
 string
 -
 
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_comm.cpp
-ros/ros.h
+/home/ziye01/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp
+math.h
 -
-kinova_driver/kinova_comm.h
-/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_driver/src/kinova_driver/kinova_comm.h
-string
+angles/angles.h
 -
-vector
+kinova_driver/kinova_ros_types.h
 -
-tf/tf.h
+
+/opt/ros/noetic/include/angles/angles.h
+algorithm
 -
-arpa/inet.h
+cmath
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 # Utility rule file for std_srvs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_mes
 .PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 
 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ziye01/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 
 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/kinova_mvig/src /home/ziye01/kinova_mvig/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo /home/ziye01/kinova_mvig/build /home/ziye01/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo /home/ziye01/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
 

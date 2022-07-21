@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_arm_moveit_demo/motion_plan"
-  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_arm_moveit_demo/motion_plan.pdb"
+  "/home/ziye01/kinova_mvig/devel/lib/kinova_arm_moveit_demo/motion_plan"
+  "/home/ziye01/kinova_mvig/devel/lib/kinova_arm_moveit_demo/motion_plan.pdb"
   "CMakeFiles/motion_plan.dir/src/motion_plan.cpp.o"
 )
 

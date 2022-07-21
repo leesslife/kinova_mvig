@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ziye01/lees_ros/kinova_mvig/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ziye01/kinova_mvig/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

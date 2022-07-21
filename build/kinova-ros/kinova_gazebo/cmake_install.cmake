@@ -1,8 +1,8 @@
-# Install script for directory: /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_gazebo
+# Install script for directory: /home/ziye01/kinova_mvig/src/kinova-ros/kinova_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ziye01/lees_ros/kinova_mvig/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ziye01/kinova_mvig/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_gazebo/catkin_generated/installspace/kinova_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_gazebo/catkin_generated/installspace/kinova_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo/cmake" TYPE FILE FILES
-    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_gazebo/catkin_generated/installspace/kinova_gazeboConfig.cmake"
-    "/home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_gazebo/catkin_generated/installspace/kinova_gazeboConfig-version.cmake"
+    "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_gazebo/catkin_generated/installspace/kinova_gazeboConfig.cmake"
+    "/home/ziye01/kinova_mvig/build/kinova-ros/kinova_gazebo/catkin_generated/installspace/kinova_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo" TYPE FILE FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo" TYPE FILE FILES "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_gazebo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_gazebo/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_gazebo/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo" TYPE DIRECTORY FILES "/home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_gazebo/worlds")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kinova_gazebo" TYPE DIRECTORY FILES "/home/ziye01/kinova_mvig/src/kinova-ros/kinova_gazebo/worlds")
 endif()
 

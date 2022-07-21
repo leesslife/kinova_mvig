@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/opt/ros/noetic/lib")
+set(ORDERED_PATHS "/home/ziye01/rfmoveit/devel/.private/moveit_core/lib;/home/ziye01/rfmoveit/devel/.private/geometric_shapes/lib;/home/ziye01/rfmoveit/devel/.private/srdfdom/lib;/opt/ros/noetic/lib")

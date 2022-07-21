@@ -1,8 +1,8 @@
-prefix=/home/ziye01/lees_ros/kinova_mvig/devel
+prefix=/home/ziye01/kinova_mvig/devel
 
 Name: kinova_msgs
 Description: Description of kinova_msgs
 Version: 0.0.1
-Cflags: -I/home/ziye01/lees_ros/kinova_mvig/devel/include
+Cflags: -I/home/ziye01/kinova_mvig/devel/include
 Libs: -L${prefix}/lib 
 Requires: actionlib_msgs geometry_msgs message_runtime

@@ -1,4 +1,4 @@
-prefix=/home/ziye01/lees_ros/kinova_mvig/install
+prefix=/home/ziye01/kinova_mvig/install
 
 Name: kinova_msgs
 Description: Description of kinova_msgs

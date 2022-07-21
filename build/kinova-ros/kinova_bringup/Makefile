@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -115,8 +115,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_bringup/CMakeFiles/progress.marks
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles 0
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/kinova_mvig/build/CMakeFiles /home/ziye01/kinova_mvig/build/kinova-ros/kinova_bringup/CMakeFiles/progress.marks
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/kinova_mvig/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/clean
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/preinstall
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/preinstall
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule
 .PHONY : kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ _catkin_empty_exported_target: kinova-ros/kinova_bringup/CMakeFiles/_catkin_empt
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build.make kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build.make kinova-ros/kinova_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

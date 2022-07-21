@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -115,8 +115,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/kinova_mvig/build/CMakeFiles /home/ziye01/kinova_mvig/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/kinova_mvig/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2339,6 +2339,84 @@ jaco_control_gennodejs/fast:
 .PHONY : jaco_control_gennodejs/fast
 
 #=============================================================================
+# Target rules for targets named test_accuracy
+
+# Build rule for target.
+test_accuracy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_accuracy
+.PHONY : test_accuracy
+
+# fast build rule for target.
+test_accuracy/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build
+.PHONY : test_accuracy/fast
+
+#=============================================================================
+# Target rules for targets named pick_place
+
+# Build rule for target.
+pick_place: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pick_place
+.PHONY : pick_place
+
+# fast build rule for target.
+pick_place/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build
+.PHONY : pick_place/fast
+
+#=============================================================================
+# Target rules for targets named motion_plan
+
+# Build rule for target.
+motion_plan: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motion_plan
+.PHONY : motion_plan
+
+# fast build rule for target.
+motion_plan/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build
+.PHONY : motion_plan/fast
+
+#=============================================================================
+# Target rules for targets named work_scene
+
+# Build rule for target.
+work_scene: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 work_scene
+.PHONY : work_scene
+
+# fast build rule for target.
+work_scene/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build
+.PHONY : work_scene/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -2348,7 +2426,7 @@ trajectory_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
 .PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2361,7 +2439,7 @@ shape_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 shape_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
 .PHONY : shape_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -2374,8 +2452,21 @@ object_recognition_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_py/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
 .PHONY : object_recognition_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named moveit_msgs_generate_messages_nodejs
@@ -2387,7 +2478,7 @@ moveit_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 moveit_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
 .PHONY : moveit_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -2400,7 +2491,7 @@ shape_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 shape_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
 .PHONY : shape_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2413,7 +2504,7 @@ moveit_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 moveit_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
 .PHONY : moveit_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -2426,7 +2517,7 @@ moveit_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 moveit_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
 .PHONY : moveit_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -2439,7 +2530,7 @@ moveit_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 moveit_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
 .PHONY : moveit_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2452,7 +2543,7 @@ trajectory_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
 .PHONY : trajectory_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -2465,7 +2556,7 @@ shape_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 shape_msgs_generate_messages_py/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/build
 .PHONY : shape_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -2478,7 +2569,7 @@ moveit_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 moveit_msgs_generate_messages_py/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
 .PHONY : moveit_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -2491,7 +2582,7 @@ object_recognition_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
 .PHONY : object_recognition_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -2504,7 +2595,7 @@ shape_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 shape_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
 .PHONY : shape_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -2517,7 +2608,7 @@ shape_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 shape_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
 .PHONY : shape_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -2530,7 +2621,7 @@ trajectory_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
 .PHONY : trajectory_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -2543,7 +2634,7 @@ octomap_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 octomap_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
 .PHONY : octomap_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -2556,7 +2647,7 @@ trajectory_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -2569,7 +2660,7 @@ octomap_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 octomap_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
 .PHONY : octomap_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -2582,7 +2673,7 @@ trajectory_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_py/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -2595,7 +2686,7 @@ object_recognition_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
 .PHONY : object_recognition_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2608,21 +2699,21 @@ object_recognition_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
 .PHONY : object_recognition_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named object_recognition_msgs_generate_messages_nodejs
+# Target rules for targets named std_srvs_generate_messages_cpp
 
 # Build rule for target.
-object_recognition_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_nodejs
-.PHONY : object_recognition_msgs_generate_messages_nodejs
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
 
 # fast build rule for target.
-object_recognition_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
-.PHONY : object_recognition_msgs_generate_messages_nodejs/fast
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named octomap_msgs_generate_messages_cpp
@@ -2634,7 +2725,7 @@ octomap_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 octomap_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
 .PHONY : octomap_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2647,8 +2738,21 @@ octomap_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 octomap_msgs_generate_messages_py/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
 .PHONY : octomap_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named moveit_ros_planning_gencfg
+
+# Build rule for target.
+moveit_ros_planning_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_ros_planning_gencfg
+.PHONY : moveit_ros_planning_gencfg
+
+# fast build rule for target.
+moveit_ros_planning_gencfg/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build
+.PHONY : moveit_ros_planning_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named octomap_msgs_generate_messages_lisp
@@ -2660,8 +2764,47 @@ octomap_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 octomap_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
 .PHONY : octomap_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named moveit_ros_manipulation_gencfg
+
+# Build rule for target.
+moveit_ros_manipulation_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_ros_manipulation_gencfg
+.PHONY : moveit_ros_manipulation_gencfg
+
+# fast build rule for target.
+moveit_ros_manipulation_gencfg/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
+.PHONY : moveit_ros_manipulation_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_nodejs
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_nodejs
+.PHONY : object_recognition_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
+.PHONY : object_recognition_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named j2n6s300_arm_moveit_ikfast_plugin
@@ -2714,149 +2857,6 @@ m1n6s300_mico_arm_moveit_ikfast_plugin: cmake_check_build_system
 m1n6s300_mico_arm_moveit_ikfast_plugin/fast:
 	$(MAKE) -f kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/m1n6s300_ikfast/CMakeFiles/m1n6s300_mico_arm_moveit_ikfast_plugin.dir/build.make kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/m1n6s300_ikfast/CMakeFiles/m1n6s300_mico_arm_moveit_ikfast_plugin.dir/build
 .PHONY : m1n6s300_mico_arm_moveit_ikfast_plugin/fast
-
-#=============================================================================
-# Target rules for targets named moveit_ros_planning_gencfg
-
-# Build rule for target.
-moveit_ros_planning_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 moveit_ros_planning_gencfg
-.PHONY : moveit_ros_planning_gencfg
-
-# fast build rule for target.
-moveit_ros_planning_gencfg/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build
-.PHONY : moveit_ros_planning_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
-
-# Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
-
-# Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
-
-# Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named motion_plan
-
-# Build rule for target.
-motion_plan: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 motion_plan
-.PHONY : motion_plan
-
-# fast build rule for target.
-motion_plan/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build
-.PHONY : motion_plan/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_nodejs
-
-# Build rule for target.
-std_srvs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named work_scene
-
-# Build rule for target.
-work_scene: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 work_scene
-.PHONY : work_scene
-
-# fast build rule for target.
-work_scene/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build
-.PHONY : work_scene/fast
-
-#=============================================================================
-# Target rules for targets named moveit_ros_manipulation_gencfg
-
-# Build rule for target.
-moveit_ros_manipulation_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 moveit_ros_manipulation_gencfg
-.PHONY : moveit_ros_manipulation_gencfg
-
-# fast build rule for target.
-moveit_ros_manipulation_gencfg/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
-.PHONY : moveit_ros_manipulation_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
-
-# Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named test_accuracy
-
-# Build rule for target.
-test_accuracy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_accuracy
-.PHONY : test_accuracy
-
-# fast build rule for target.
-test_accuracy/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build
-.PHONY : test_accuracy/fast
-
-#=============================================================================
-# Target rules for targets named pick_place
-
-# Build rule for target.
-pick_place: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pick_place
-.PHONY : pick_place
-
-# fast build rule for target.
-pick_place/fast:
-	$(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build
-.PHONY : pick_place/fast
 
 # Help Target
 help:
@@ -3038,9 +3038,16 @@ help:
 	@echo "... jaco_control_generate_messages_lisp"
 	@echo "... jaco_control_genlisp"
 	@echo "... jaco_control_gennodejs"
+	@echo "... test_accuracy"
+	@echo "... pick_place"
+	@echo "... motion_plan"
+	@echo "... work_scene"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... shape_msgs_generate_messages_nodejs"
 	@echo "... object_recognition_msgs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... moveit_msgs_generate_messages_nodejs"
 	@echo "... shape_msgs_generate_messages_cpp"
 	@echo "... moveit_msgs_generate_messages_lisp"
@@ -3059,25 +3066,18 @@ help:
 	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... object_recognition_msgs_generate_messages_cpp"
 	@echo "... object_recognition_msgs_generate_messages_eus"
-	@echo "... object_recognition_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... octomap_msgs_generate_messages_cpp"
 	@echo "... octomap_msgs_generate_messages_py"
+	@echo "... moveit_ros_planning_gencfg"
 	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... moveit_ros_manipulation_gencfg"
+	@echo "... object_recognition_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_eus"
 	@echo "... j2n6s300_arm_moveit_ikfast_plugin"
 	@echo "... j2s6s300_arm_moveit_ikfast_plugin"
 	@echo "... j2s7s300_robot_arm_moveit_ikfast_plugin"
 	@echo "... m1n6s300_mico_arm_moveit_ikfast_plugin"
-	@echo "... moveit_ros_planning_gencfg"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... motion_plan"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... work_scene"
-	@echo "... moveit_ros_manipulation_gencfg"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... test_accuracy"
-	@echo "... pick_place"
 .PHONY : help
 
 

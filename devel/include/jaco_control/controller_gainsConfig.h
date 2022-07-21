@@ -410,85 +410,85 @@ double impedance_K_d_w_z;
 
 
 
-//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 19 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_1;
-//#line 20 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 20 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_2;
-//#line 21 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 21 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_3;
-//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 22 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_4;
-//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 23 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_5;
-//#line 24 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 24 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_6;
-//#line 25 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 25 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_p_7;
-//#line 28 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 28 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_1;
-//#line 29 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 29 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_2;
-//#line 30 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 30 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_3;
-//#line 31 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 31 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_4;
-//#line 32 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 32 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_5;
-//#line 33 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 33 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_6;
-//#line 34 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 34 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double velocity_K_d_7;
-//#line 40 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 40 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_1;
-//#line 41 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 41 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_2;
-//#line 42 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 42 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_3;
-//#line 43 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 43 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_4;
-//#line 44 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 44 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_5;
-//#line 45 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 45 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_6;
-//#line 46 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 46 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_p_7;
-//#line 49 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 49 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_1;
-//#line 50 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 50 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_2;
-//#line 51 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 51 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_3;
-//#line 52 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 52 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_4;
-//#line 53 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 53 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_5;
-//#line 54 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 54 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_6;
-//#line 55 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 55 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double fftorque_K_d_7;
-//#line 61 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 61 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_p_x;
-//#line 62 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 62 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_p_y;
-//#line 63 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 63 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_p_z;
-//#line 64 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 64 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_p_w_x;
-//#line 65 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 65 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_p_w_y;
-//#line 66 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 66 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_p_w_z;
-//#line 69 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 69 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_d_x;
-//#line 70 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 70 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_d_y;
-//#line 71 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 71 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_d_z;
-//#line 72 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 72 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_d_w_x;
-//#line 73 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 73 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_d_w_y;
-//#line 74 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 74 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       double impedance_K_d_w_z;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -629,145 +629,145 @@ double impedance_K_d_w_z;
     {
 controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT, controller_gainsConfig> Default("Default", "", 0, 0, true, &controller_gainsConfig::groups);
 controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::VELOCITY_CONTROLLER_GAINS, controller_gainsConfig::DEFAULT> Velocity_Controller_Gains("Velocity_Controller_Gains", "", 0, 1, true, &controller_gainsConfig::DEFAULT::velocity_controller_gains);
-//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 19 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_1 = 0.0;
-//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 19 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_1 = 200.0;
-//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 19 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_1 = 5.0;
-//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 19 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_1", "double", 0, "Velocity controller: P gain for joint 1", "", &controller_gainsConfig::velocity_K_p_1)));
-//#line 19 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 19 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_1", "double", 0, "Velocity controller: P gain for joint 1", "", &controller_gainsConfig::velocity_K_p_1)));
-//#line 20 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 20 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_2 = 0.0;
-//#line 20 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 20 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_2 = 200.0;
-//#line 20 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 20 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_2 = 5.0;
-//#line 20 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 20 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_2", "double", 0, "Velocity controller: P gain for joint 2", "", &controller_gainsConfig::velocity_K_p_2)));
-//#line 20 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 20 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_2", "double", 0, "Velocity controller: P gain for joint 2", "", &controller_gainsConfig::velocity_K_p_2)));
-//#line 21 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 21 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_3 = 0.0;
-//#line 21 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 21 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_3 = 200.0;
-//#line 21 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 21 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_3 = 5.0;
-//#line 21 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 21 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_3", "double", 0, "Velocity controller: P gain for joint 3", "", &controller_gainsConfig::velocity_K_p_3)));
-//#line 21 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 21 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_3", "double", 0, "Velocity controller: P gain for joint 3", "", &controller_gainsConfig::velocity_K_p_3)));
-//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 22 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_4 = 0.0;
-//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 22 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_4 = 200.0;
-//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 22 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_4 = 5.0;
-//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 22 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_4", "double", 0, "Velocity controller: P gain for joint 4", "", &controller_gainsConfig::velocity_K_p_4)));
-//#line 22 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 22 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_4", "double", 0, "Velocity controller: P gain for joint 4", "", &controller_gainsConfig::velocity_K_p_4)));
-//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 23 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_5 = 0.0;
-//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 23 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_5 = 200.0;
-//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 23 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_5 = 5.0;
-//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 23 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_5", "double", 0, "Velocity controller: P gain for joint 5", "", &controller_gainsConfig::velocity_K_p_5)));
-//#line 23 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 23 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_5", "double", 0, "Velocity controller: P gain for joint 5", "", &controller_gainsConfig::velocity_K_p_5)));
-//#line 24 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 24 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_6 = 0.0;
-//#line 24 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 24 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_6 = 200.0;
-//#line 24 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 24 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_6 = 5.0;
-//#line 24 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 24 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_6", "double", 0, "Velocity controller: P gain for joint 6", "", &controller_gainsConfig::velocity_K_p_6)));
-//#line 24 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 24 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_6", "double", 0, "Velocity controller: P gain for joint 6", "", &controller_gainsConfig::velocity_K_p_6)));
-//#line 25 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 25 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_p_7 = 0.0;
-//#line 25 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 25 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_p_7 = 200.0;
-//#line 25 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 25 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_p_7 = 5.0;
-//#line 25 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 25 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_7", "double", 0, "Velocity controller: P gain for joint 7", "", &controller_gainsConfig::velocity_K_p_7)));
-//#line 25 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 25 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_p_7", "double", 0, "Velocity controller: P gain for joint 7", "", &controller_gainsConfig::velocity_K_p_7)));
-//#line 28 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 28 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_1 = 0.0;
-//#line 28 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 28 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_1 = 50.0;
-//#line 28 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 28 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_1 = 1.0;
-//#line 28 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 28 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_1", "double", 0, "Velocity controller: D gain for joint 1", "", &controller_gainsConfig::velocity_K_d_1)));
-//#line 28 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 28 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_1", "double", 0, "Velocity controller: D gain for joint 1", "", &controller_gainsConfig::velocity_K_d_1)));
-//#line 29 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 29 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_2 = 0.0;
-//#line 29 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 29 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_2 = 50.0;
-//#line 29 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 29 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_2 = 1.0;
-//#line 29 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 29 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_2", "double", 0, "Velocity controller: D gain for joint 2", "", &controller_gainsConfig::velocity_K_d_2)));
-//#line 29 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 29 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_2", "double", 0, "Velocity controller: D gain for joint 2", "", &controller_gainsConfig::velocity_K_d_2)));
-//#line 30 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 30 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_3 = 0.0;
-//#line 30 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 30 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_3 = 50.0;
-//#line 30 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 30 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_3 = 1.0;
-//#line 30 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 30 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_3", "double", 0, "Velocity controller: D gain for joint 3", "", &controller_gainsConfig::velocity_K_d_3)));
-//#line 30 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 30 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_3", "double", 0, "Velocity controller: D gain for joint 3", "", &controller_gainsConfig::velocity_K_d_3)));
-//#line 31 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 31 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_4 = 0.0;
-//#line 31 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 31 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_4 = 50.0;
-//#line 31 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 31 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_4 = 1.0;
-//#line 31 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 31 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_4", "double", 0, "Velocity controller: D gain for joint 4", "", &controller_gainsConfig::velocity_K_d_4)));
-//#line 31 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 31 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_4", "double", 0, "Velocity controller: D gain for joint 4", "", &controller_gainsConfig::velocity_K_d_4)));
-//#line 32 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 32 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_5 = 0.0;
-//#line 32 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 32 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_5 = 50.0;
-//#line 32 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 32 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_5 = 1.0;
-//#line 32 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 32 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_5", "double", 0, "Velocity controller: D gain for joint 5", "", &controller_gainsConfig::velocity_K_d_5)));
-//#line 32 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 32 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_5", "double", 0, "Velocity controller: D gain for joint 5", "", &controller_gainsConfig::velocity_K_d_5)));
-//#line 33 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 33 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_6 = 0.0;
-//#line 33 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 33 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_6 = 50.0;
-//#line 33 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 33 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_6 = 1.0;
-//#line 33 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 33 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_6", "double", 0, "Velocity controller: D gain for joint 6", "", &controller_gainsConfig::velocity_K_d_6)));
-//#line 33 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 33 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_6", "double", 0, "Velocity controller: D gain for joint 6", "", &controller_gainsConfig::velocity_K_d_6)));
-//#line 34 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 34 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.velocity_K_d_7 = 0.0;
-//#line 34 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 34 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.velocity_K_d_7 = 50.0;
-//#line 34 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 34 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.velocity_K_d_7 = 1.0;
-//#line 34 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 34 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Velocity_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_7", "double", 0, "Velocity controller: D gain for joint 7", "", &controller_gainsConfig::velocity_K_d_7)));
-//#line 34 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 34 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("velocity_K_d_7", "double", 0, "Velocity controller: D gain for joint 7", "", &controller_gainsConfig::velocity_K_d_7)));
 //#line 124 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Velocity_Controller_Gains.convertParams();
@@ -776,145 +776,145 @@ controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::VELOCI
 //#line 124 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(controller_gainsConfig::AbstractGroupDescriptionConstPtr(new controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::VELOCITY_CONTROLLER_GAINS, controller_gainsConfig::DEFAULT>(Velocity_Controller_Gains)));
 controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::FEEDFORWARD_TORQUE_CONTROLLER_GAINS, controller_gainsConfig::DEFAULT> Feedforward_Torque_Controller_Gains("Feedforward_Torque_Controller_Gains", "", 0, 2, true, &controller_gainsConfig::DEFAULT::feedforward_torque_controller_gains);
-//#line 40 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 40 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_1 = 0.0;
-//#line 40 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 40 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_1 = 200.0;
-//#line 40 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 40 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_1 = 45.0;
-//#line 40 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 40 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_1", "double", 0, "Feedforward torque controller: P gain for joint 1", "", &controller_gainsConfig::fftorque_K_p_1)));
-//#line 40 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 40 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_1", "double", 0, "Feedforward torque controller: P gain for joint 1", "", &controller_gainsConfig::fftorque_K_p_1)));
-//#line 41 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 41 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_2 = 0.0;
-//#line 41 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 41 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_2 = 200.0;
-//#line 41 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 41 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_2 = 45.0;
-//#line 41 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 41 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_2", "double", 0, "Feedforward torque controller: P gain for joint 2", "", &controller_gainsConfig::fftorque_K_p_2)));
-//#line 41 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 41 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_2", "double", 0, "Feedforward torque controller: P gain for joint 2", "", &controller_gainsConfig::fftorque_K_p_2)));
-//#line 42 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 42 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_3 = 0.0;
-//#line 42 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 42 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_3 = 200.0;
-//#line 42 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 42 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_3 = 45.0;
-//#line 42 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 42 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_3", "double", 0, "Feedforward torque controller: P gain for joint 3", "", &controller_gainsConfig::fftorque_K_p_3)));
-//#line 42 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 42 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_3", "double", 0, "Feedforward torque controller: P gain for joint 3", "", &controller_gainsConfig::fftorque_K_p_3)));
-//#line 43 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 43 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_4 = 0.0;
-//#line 43 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 43 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_4 = 200.0;
-//#line 43 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 43 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_4 = 10.0;
-//#line 43 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 43 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_4", "double", 0, "Feedforward torque controller: P gain for joint 4", "", &controller_gainsConfig::fftorque_K_p_4)));
-//#line 43 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 43 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_4", "double", 0, "Feedforward torque controller: P gain for joint 4", "", &controller_gainsConfig::fftorque_K_p_4)));
-//#line 44 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 44 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_5 = 0.0;
-//#line 44 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 44 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_5 = 200.0;
-//#line 44 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 44 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_5 = 10.0;
-//#line 44 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 44 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_5", "double", 0, "Feedforward torque controller: P gain for joint 5", "", &controller_gainsConfig::fftorque_K_p_5)));
-//#line 44 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 44 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_5", "double", 0, "Feedforward torque controller: P gain for joint 5", "", &controller_gainsConfig::fftorque_K_p_5)));
-//#line 45 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 45 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_6 = 0.0;
-//#line 45 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 45 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_6 = 200.0;
-//#line 45 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 45 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_6 = 10.0;
-//#line 45 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 45 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_6", "double", 0, "Feedforward torque controller: P gain for joint 6", "", &controller_gainsConfig::fftorque_K_p_6)));
-//#line 45 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 45 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_6", "double", 0, "Feedforward torque controller: P gain for joint 6", "", &controller_gainsConfig::fftorque_K_p_6)));
-//#line 46 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 46 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_p_7 = 0.0;
-//#line 46 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 46 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_p_7 = 200.0;
-//#line 46 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 46 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_p_7 = 10.0;
-//#line 46 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 46 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_7", "double", 0, "Feedforward torque controller: P gain for joint 7", "", &controller_gainsConfig::fftorque_K_p_7)));
-//#line 46 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 46 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_p_7", "double", 0, "Feedforward torque controller: P gain for joint 7", "", &controller_gainsConfig::fftorque_K_p_7)));
-//#line 49 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 49 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_1 = 0.0;
-//#line 49 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 49 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_1 = 50.0;
-//#line 49 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 49 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_1 = 4.0;
-//#line 49 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 49 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_1", "double", 0, "Feedforward torque controller: D gain for joint 1", "", &controller_gainsConfig::fftorque_K_d_1)));
-//#line 49 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 49 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_1", "double", 0, "Feedforward torque controller: D gain for joint 1", "", &controller_gainsConfig::fftorque_K_d_1)));
-//#line 50 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 50 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_2 = 0.0;
-//#line 50 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 50 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_2 = 50.0;
-//#line 50 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 50 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_2 = 4.0;
-//#line 50 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 50 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_2", "double", 0, "Feedforward torque controller: D gain for joint 2", "", &controller_gainsConfig::fftorque_K_d_2)));
-//#line 50 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 50 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_2", "double", 0, "Feedforward torque controller: D gain for joint 2", "", &controller_gainsConfig::fftorque_K_d_2)));
-//#line 51 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 51 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_3 = 0.0;
-//#line 51 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 51 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_3 = 50.0;
-//#line 51 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 51 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_3 = 4.0;
-//#line 51 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 51 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_3", "double", 0, "Feedforward torque controller: D gain for joint 3", "", &controller_gainsConfig::fftorque_K_d_3)));
-//#line 51 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 51 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_3", "double", 0, "Feedforward torque controller: D gain for joint 3", "", &controller_gainsConfig::fftorque_K_d_3)));
-//#line 52 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 52 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_4 = 0.0;
-//#line 52 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 52 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_4 = 50.0;
-//#line 52 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 52 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_4 = 1.5;
-//#line 52 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 52 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_4", "double", 0, "Feedforward torque controller: D gain for joint 4", "", &controller_gainsConfig::fftorque_K_d_4)));
-//#line 52 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 52 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_4", "double", 0, "Feedforward torque controller: D gain for joint 4", "", &controller_gainsConfig::fftorque_K_d_4)));
-//#line 53 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 53 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_5 = 0.0;
-//#line 53 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 53 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_5 = 50.0;
-//#line 53 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 53 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_5 = 1.5;
-//#line 53 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 53 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_5", "double", 0, "Feedforward torque controller: D gain for joint 5", "", &controller_gainsConfig::fftorque_K_d_5)));
-//#line 53 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 53 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_5", "double", 0, "Feedforward torque controller: D gain for joint 5", "", &controller_gainsConfig::fftorque_K_d_5)));
-//#line 54 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 54 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_6 = 0.0;
-//#line 54 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 54 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_6 = 50.0;
-//#line 54 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 54 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_6 = 1.5;
-//#line 54 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 54 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_6", "double", 0, "Feedforward torque controller: D gain for joint 6", "", &controller_gainsConfig::fftorque_K_d_6)));
-//#line 54 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 54 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_6", "double", 0, "Feedforward torque controller: D gain for joint 6", "", &controller_gainsConfig::fftorque_K_d_6)));
-//#line 55 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 55 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.fftorque_K_d_7 = 0.0;
-//#line 55 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 55 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.fftorque_K_d_7 = 50.0;
-//#line 55 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 55 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.fftorque_K_d_7 = 1.5;
-//#line 55 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 55 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Feedforward_Torque_Controller_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_7", "double", 0, "Feedforward torque controller: D gain for joint 7", "", &controller_gainsConfig::fftorque_K_d_7)));
-//#line 55 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 55 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("fftorque_K_d_7", "double", 0, "Feedforward torque controller: D gain for joint 7", "", &controller_gainsConfig::fftorque_K_d_7)));
 //#line 124 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Feedforward_Torque_Controller_Gains.convertParams();
@@ -923,125 +923,125 @@ controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::FEEDFO
 //#line 124 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(controller_gainsConfig::AbstractGroupDescriptionConstPtr(new controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::FEEDFORWARD_TORQUE_CONTROLLER_GAINS, controller_gainsConfig::DEFAULT>(Feedforward_Torque_Controller_Gains)));
 controller_gainsConfig::GroupDescription<controller_gainsConfig::DEFAULT::IMPEDANCE_CONTROLLER_TASK_SPACE_GAINS, controller_gainsConfig::DEFAULT> Impedance_Controller_Task_Space_Gains("Impedance_Controller_Task_Space_Gains", "", 0, 3, true, &controller_gainsConfig::DEFAULT::impedance_controller_task_space_gains);
-//#line 61 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 61 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_p_x = 0.0;
-//#line 61 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 61 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_p_x = 200.0;
-//#line 61 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 61 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_p_x = 10.0;
-//#line 61 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 61 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_x", "double", 0, "Impedance controller: P gain for x", "", &controller_gainsConfig::impedance_K_p_x)));
-//#line 61 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 61 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_x", "double", 0, "Impedance controller: P gain for x", "", &controller_gainsConfig::impedance_K_p_x)));
-//#line 62 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 62 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_p_y = 0.0;
-//#line 62 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 62 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_p_y = 200.0;
-//#line 62 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 62 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_p_y = 10.0;
-//#line 62 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 62 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_y", "double", 0, "Impedance controller: P gain for y", "", &controller_gainsConfig::impedance_K_p_y)));
-//#line 62 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 62 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_y", "double", 0, "Impedance controller: P gain for y", "", &controller_gainsConfig::impedance_K_p_y)));
-//#line 63 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 63 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_p_z = 0.0;
-//#line 63 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 63 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_p_z = 200.0;
-//#line 63 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 63 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_p_z = 10.0;
-//#line 63 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 63 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_z", "double", 0, "Impedance controller: P gain for z", "", &controller_gainsConfig::impedance_K_p_z)));
-//#line 63 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 63 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_z", "double", 0, "Impedance controller: P gain for z", "", &controller_gainsConfig::impedance_K_p_z)));
-//#line 64 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 64 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_p_w_x = 0.0;
-//#line 64 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 64 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_p_w_x = 200.0;
-//#line 64 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 64 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_p_w_x = 10.0;
-//#line 64 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 64 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_w_x", "double", 0, "Impedance controller: P gain for w_x", "", &controller_gainsConfig::impedance_K_p_w_x)));
-//#line 64 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 64 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_w_x", "double", 0, "Impedance controller: P gain for w_x", "", &controller_gainsConfig::impedance_K_p_w_x)));
-//#line 65 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 65 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_p_w_y = 0.0;
-//#line 65 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 65 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_p_w_y = 200.0;
-//#line 65 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 65 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_p_w_y = 10.0;
-//#line 65 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 65 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_w_y", "double", 0, "Impedance controller: P gain for w_y", "", &controller_gainsConfig::impedance_K_p_w_y)));
-//#line 65 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 65 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_w_y", "double", 0, "Impedance controller: P gain for w_y", "", &controller_gainsConfig::impedance_K_p_w_y)));
-//#line 66 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 66 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_p_w_z = 0.0;
-//#line 66 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 66 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_p_w_z = 200.0;
-//#line 66 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 66 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_p_w_z = 10.0;
-//#line 66 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 66 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_w_z", "double", 0, "Impedance controller: P gain for w_z", "", &controller_gainsConfig::impedance_K_p_w_z)));
-//#line 66 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 66 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_p_w_z", "double", 0, "Impedance controller: P gain for w_z", "", &controller_gainsConfig::impedance_K_p_w_z)));
-//#line 69 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 69 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_d_x = 0.0;
-//#line 69 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 69 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_d_x = 50.0;
-//#line 69 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 69 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_d_x = 1.0;
-//#line 69 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 69 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_x", "double", 0, "Impedance controller: D gain for x", "", &controller_gainsConfig::impedance_K_d_x)));
-//#line 69 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 69 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_x", "double", 0, "Impedance controller: D gain for x", "", &controller_gainsConfig::impedance_K_d_x)));
-//#line 70 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 70 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_d_y = 0.0;
-//#line 70 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 70 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_d_y = 50.0;
-//#line 70 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 70 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_d_y = 1.0;
-//#line 70 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 70 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_y", "double", 0, "Impedance controller: D gain for y", "", &controller_gainsConfig::impedance_K_d_y)));
-//#line 70 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 70 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_y", "double", 0, "Impedance controller: D gain for y", "", &controller_gainsConfig::impedance_K_d_y)));
-//#line 71 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 71 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_d_z = 0.0;
-//#line 71 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 71 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_d_z = 50.0;
-//#line 71 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 71 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_d_z = 1.0;
-//#line 71 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 71 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_z", "double", 0, "Impedance controller: D gain for z", "", &controller_gainsConfig::impedance_K_d_z)));
-//#line 71 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 71 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_z", "double", 0, "Impedance controller: D gain for z", "", &controller_gainsConfig::impedance_K_d_z)));
-//#line 72 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 72 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_d_w_x = 0.0;
-//#line 72 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 72 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_d_w_x = 50.0;
-//#line 72 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 72 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_d_w_x = 1.0;
-//#line 72 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 72 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_w_x", "double", 0, "Impedance controller: D gain for w_x", "", &controller_gainsConfig::impedance_K_d_w_x)));
-//#line 72 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 72 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_w_x", "double", 0, "Impedance controller: D gain for w_x", "", &controller_gainsConfig::impedance_K_d_w_x)));
-//#line 73 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 73 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_d_w_y = 0.0;
-//#line 73 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 73 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_d_w_y = 50.0;
-//#line 73 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 73 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_d_w_y = 1.0;
-//#line 73 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 73 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_w_y", "double", 0, "Impedance controller: D gain for w_y", "", &controller_gainsConfig::impedance_K_d_w_y)));
-//#line 73 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 73 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_w_y", "double", 0, "Impedance controller: D gain for w_y", "", &controller_gainsConfig::impedance_K_d_w_y)));
-//#line 74 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 74 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __min__.impedance_K_d_w_z = 0.0;
-//#line 74 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 74 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __max__.impedance_K_d_w_z = 50.0;
-//#line 74 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 74 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __default__.impedance_K_d_w_z = 1.0;
-//#line 74 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 74 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       Impedance_Controller_Task_Space_Gains.abstract_parameters.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_w_z", "double", 0, "Impedance controller: D gain for w_z", "", &controller_gainsConfig::impedance_K_d_w_z)));
-//#line 74 "/home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
+//#line 74 "/home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg"
       __param_descriptions__.push_back(controller_gainsConfig::AbstractParamDescriptionConstPtr(new controller_gainsConfig::ParamDescription<double>("impedance_K_d_w_z", "double", 0, "Impedance controller: D gain for w_z", "", &controller_gainsConfig::impedance_K_d_w_z)));
 //#line 124 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Impedance_Controller_Task_Space_Gains.convertParams();

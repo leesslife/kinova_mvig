@@ -43,69 +43,69 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 # Utility rule file for jaco_control_gencfg.
 
 # Include the progress variables for this target.
 include jaco_control/CMakeFiles/jaco_control_gencfg.dir/progress.make
 
-jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
-jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py
-jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
-jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py
+jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
+jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py
+jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
+jaco_control/CMakeFiles/jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py
 
 
-/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h: /home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg
-/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/controller_gains.cfg: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py"
-	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /home/ziye01/lees_ros/kinova_mvig/build/jaco_control/setup_custom_pythonpath.sh /home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control
+/home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h: /home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg
+/home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/controller_gains.cfg: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py"
+	cd /home/ziye01/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /home/ziye01/kinova_mvig/build/jaco_control/setup_custom_pythonpath.sh /home/ziye01/kinova_mvig/src/jaco_control/cfg/controller_gains.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/ziye01/kinova_mvig/devel/share/jaco_control /home/ziye01/kinova_mvig/devel/include/jaco_control /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control
 
-/home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.dox: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.dox
+/home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.dox: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.dox
 
-/home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig-usage.dox: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig-usage.dox
+/home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig-usage.dox: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig-usage.dox
 
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py
 
-/home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.wikidoc: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.wikidoc
+/home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.wikidoc: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.wikidoc
 
-/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h: /home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg
-/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dynamic reconfigure files from cfg/cutting_params.cfg: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py"
-	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /home/ziye01/lees_ros/kinova_mvig/build/jaco_control/setup_custom_pythonpath.sh /home/ziye01/lees_ros/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control
+/home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h: /home/ziye01/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg
+/home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ziye01/kinova_mvig/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dynamic reconfigure files from cfg/cutting_params.cfg: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py"
+	cd /home/ziye01/kinova_mvig/build/jaco_control && ../catkin_generated/env_cached.sh /home/ziye01/kinova_mvig/build/jaco_control/setup_custom_pythonpath.sh /home/ziye01/kinova_mvig/src/jaco_control/cfg/cutting_params.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/ziye01/kinova_mvig/devel/share/jaco_control /home/ziye01/kinova_mvig/devel/include/jaco_control /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control
 
-/home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.dox: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.dox
+/home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.dox: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.dox
 
-/home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig-usage.dox: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig-usage.dox
+/home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig-usage.dox: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig-usage.dox
 
-/home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py
+/home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py
 
-/home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.wikidoc: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.wikidoc
+/home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.wikidoc: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.wikidoc
 
 jaco_control_gencfg: jaco_control/CMakeFiles/jaco_control_gencfg
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.dox
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig-usage.dox
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.wikidoc
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.dox
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig-usage.dox
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py
-jaco_control_gencfg: /home/ziye01/lees_ros/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.wikidoc
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/include/jaco_control/controller_gainsConfig.h
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.dox
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig-usage.dox
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/controller_gainsConfig.py
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/controller_gainsConfig.wikidoc
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/include/jaco_control/cutting_paramsConfig.h
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.dox
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig-usage.dox
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/lib/python3/dist-packages/jaco_control/cfg/cutting_paramsConfig.py
+jaco_control_gencfg: /home/ziye01/kinova_mvig/devel/share/jaco_control/docs/cutting_paramsConfig.wikidoc
 jaco_control_gencfg: jaco_control/CMakeFiles/jaco_control_gencfg.dir/build.make
 
 .PHONY : jaco_control_gencfg
@@ -116,10 +116,10 @@ jaco_control/CMakeFiles/jaco_control_gencfg.dir/build: jaco_control_gencfg
 .PHONY : jaco_control/CMakeFiles/jaco_control_gencfg.dir/build
 
 jaco_control/CMakeFiles/jaco_control_gencfg.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build/jaco_control && $(CMAKE_COMMAND) -P CMakeFiles/jaco_control_gencfg.dir/cmake_clean.cmake
+	cd /home/ziye01/kinova_mvig/build/jaco_control && $(CMAKE_COMMAND) -P CMakeFiles/jaco_control_gencfg.dir/cmake_clean.cmake
 .PHONY : jaco_control/CMakeFiles/jaco_control_gencfg.dir/clean
 
 jaco_control/CMakeFiles/jaco_control_gencfg.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/jaco_control /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/jaco_control /home/ziye01/lees_ros/kinova_mvig/build/jaco_control/CMakeFiles/jaco_control_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/kinova_mvig/src /home/ziye01/kinova_mvig/src/jaco_control /home/ziye01/kinova_mvig/build /home/ziye01/kinova_mvig/build/jaco_control /home/ziye01/kinova_mvig/build/jaco_control/CMakeFiles/jaco_control_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jaco_control/CMakeFiles/jaco_control_gencfg.dir/depend
 

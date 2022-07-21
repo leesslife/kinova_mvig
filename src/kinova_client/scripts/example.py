@@ -70,6 +70,7 @@ def DiCodeBeControl():
         CT.setCartesianValues(unit="mq",poseValues=pose_mvig_E,relative=False)
         CT.run()
     '''
+    
 def joint_move_and_grasp_test():
     
     rospy.init_node('kinova_mvig_roboot', anonymous=True)

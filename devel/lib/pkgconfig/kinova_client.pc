@@ -1,4 +1,4 @@
-prefix=/home/ziye01/lees_ros/kinova_mvig/devel
+prefix=/home/ziye01/kinova_mvig/devel
 
 Name: kinova_client
 Description: Description of kinova_client

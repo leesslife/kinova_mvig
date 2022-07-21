@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 # Utility rule file for _kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
 include kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/progress.make
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback:
-	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kinova_msgs /home/ziye01/lees_ros/kinova_mvig/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseFeedback
+	cd /home/ziye01/kinova_mvig/build/kinova-ros/kinova_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kinova_msgs /home/ziye01/kinova_mvig/devel/share/kinova_msgs/msg/Arm_KinovaPoseActionFeedback.msg std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:kinova_msgs/KinovaPose:kinova_msgs/Arm_KinovaPoseFeedback
 
 _kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback: kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback
 _kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback: kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/build.make
@@ -67,10 +67,10 @@ kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_
 .PHONY : kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/build
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/cmake_clean.cmake
+	cd /home/ziye01/kinova_mvig/build/kinova-ros/kinova_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/cmake_clean.cmake
 .PHONY : kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/clean
 
 kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/lees_ros/kinova_mvig/src /home/ziye01/lees_ros/kinova_mvig/src/kinova-ros/kinova_msgs /home/ziye01/lees_ros/kinova_mvig/build /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ziye01/kinova_mvig/src /home/ziye01/kinova_mvig/src/kinova-ros/kinova_msgs /home/ziye01/kinova_mvig/build /home/ziye01/kinova_mvig/build/kinova-ros/kinova_msgs /home/ziye01/kinova_mvig/build/kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova-ros/kinova_msgs/CMakeFiles/_kinova_msgs_generate_messages_check_deps_Arm_KinovaPoseActionFeedback.dir/depend
 

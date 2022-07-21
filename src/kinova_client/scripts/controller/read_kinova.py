@@ -3,6 +3,7 @@ import rospy
 import numpy as np
 from geometry_msgs.msg import PoseStamped
 from kinova_msgs.msg import JointAngles
+from kinova_msgs.msg import CartesianForce
 import time 
 
 class mvig_kinova_reader():
@@ -26,6 +27,12 @@ class mvig_kinova_reader():
                          angles.joint3,angles.joint4,
                          angles.joint5,angles.joint6,
                          angles.joint7])
+
+
+    def read_tool_wrench(self):
+        forces=rospy.wait_for_message("/j2s7s300_driver/out/state/tool_wrench",CartesianForce,timeout=10)
+        return np.array([forces.force_x,forces.force_y,forces.force_z,
+                         forces.torque_x,forces.torque_y,forces.torque_z]) 
 '''
 if __name__ == '__main__':
     read= mvig_kinova_reader()

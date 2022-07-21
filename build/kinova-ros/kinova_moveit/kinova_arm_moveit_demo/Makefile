@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ziye01/lees_ros/kinova_mvig/src
+CMAKE_SOURCE_DIR = /home/ziye01/kinova_mvig/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ziye01/lees_ros/kinova_mvig/build
+CMAKE_BINARY_DIR = /home/ziye01/kinova_mvig/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,27 +92,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -126,8 +105,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,16 +114,37 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles /home/ziye01/lees_ros/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/progress.marks
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/lees_ros/kinova_mvig/build/CMakeFiles 0
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/kinova_mvig/build/CMakeFiles /home/ziye01/kinova_mvig/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/progress.marks
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ziye01/kinova_mvig/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/clean
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,157 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/preinstall
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/preinstall
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
-
-# Convenience name for target.
-moveit_ros_planning_gencfg: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
-
-.PHONY : moveit_ros_planning_gencfg
-
-# fast build rule for target.
-moveit_ros_planning_gencfg/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build
-.PHONY : moveit_ros_planning_gencfg/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule
-
-# Convenience name for target.
-motion_plan: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule
-
-.PHONY : motion_plan
-
-# fast build rule for target.
-motion_plan/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build
-.PHONY : motion_plan/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule
-
-# Convenience name for target.
-work_scene: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule
-
-.PHONY : work_scene
-
-# fast build rule for target.
-work_scene/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build
-.PHONY : work_scene/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
-
-# Convenience name for target.
-moveit_ros_manipulation_gencfg: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
-
-.PHONY : moveit_ros_manipulation_gencfg
-
-# fast build rule for target.
-moveit_ros_manipulation_gencfg/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
-.PHONY : moveit_ros_manipulation_gencfg/fast
-
-# Convenience name for target.
-kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/rule
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/rule
 .PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/rule
 
 # Convenience name for target.
@@ -314,12 +179,12 @@ test_accuracy: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_a
 
 # fast build rule for target.
 test_accuracy/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build
 .PHONY : test_accuracy/fast
 
 # Convenience name for target.
 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/rule:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/rule
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/rule
 .PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/rule
 
 # Convenience name for target.
@@ -329,8 +194,518 @@ pick_place: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_plac
 
 # fast build rule for target.
 pick_place/fast:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build
 .PHONY : pick_place/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule
+
+# Convenience name for target.
+motion_plan: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/rule
+
+.PHONY : motion_plan
+
+# fast build rule for target.
+motion_plan/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build
+.PHONY : motion_plan/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule
+
+# Convenience name for target.
+work_scene: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/rule
+
+.PHONY : work_scene
+
+# fast build rule for target.
+work_scene/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build
+.PHONY : work_scene/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : shape_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+shape_msgs_generate_messages_nodejs/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
+.PHONY : shape_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_py
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_py/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+.PHONY : object_recognition_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+moveit_msgs_generate_messages_nodejs/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+.PHONY : moveit_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : shape_msgs_generate_messages_cpp
+
+# fast build rule for target.
+shape_msgs_generate_messages_cpp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+.PHONY : shape_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_lisp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_lisp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+.PHONY : moveit_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_eus
+
+# fast build rule for target.
+moveit_msgs_generate_messages_eus/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
+.PHONY : moveit_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_cpp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_cpp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+.PHONY : moveit_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+.PHONY : shape_msgs_generate_messages_py
+
+# fast build rule for target.
+shape_msgs_generate_messages_py/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+.PHONY : shape_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_py
+
+# fast build rule for target.
+moveit_msgs_generate_messages_py/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+.PHONY : moveit_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_lisp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_lisp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : shape_msgs_generate_messages_lisp
+
+# fast build rule for target.
+shape_msgs_generate_messages_lisp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+.PHONY : shape_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+
+.PHONY : shape_msgs_generate_messages_eus
+
+# fast build rule for target.
+shape_msgs_generate_messages_eus/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
+.PHONY : shape_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_eus/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+.PHONY : trajectory_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_eus
+
+# fast build rule for target.
+octomap_msgs_generate_messages_eus/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
+.PHONY : octomap_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_nodejs/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+octomap_msgs_generate_messages_nodejs/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+.PHONY : octomap_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_cpp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_eus
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_eus/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
+.PHONY : object_recognition_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_cpp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_py: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_py
+
+# fast build rule for target.
+octomap_msgs_generate_messages_py/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+.PHONY : octomap_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+
+# Convenience name for target.
+moveit_ros_planning_gencfg: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+
+.PHONY : moveit_ros_planning_gencfg
+
+# fast build rule for target.
+moveit_ros_planning_gencfg/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_planning_gencfg.dir/build
+.PHONY : moveit_ros_planning_gencfg/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_lisp: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_lisp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_lisp/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+.PHONY : octomap_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+
+# Convenience name for target.
+moveit_ros_manipulation_gencfg: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+
+.PHONY : moveit_ros_manipulation_gencfg
+
+# fast build rule for target.
+moveit_ros_manipulation_gencfg/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
+.PHONY : moveit_ros_manipulation_gencfg/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_nodejs: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_nodejs/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
+.PHONY : object_recognition_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f CMakeFiles/Makefile2 kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
 
 src/motion_plan.o: src/motion_plan.cpp.o
 
@@ -338,7 +713,7 @@ src/motion_plan.o: src/motion_plan.cpp.o
 
 # target to build an object file
 src/motion_plan.cpp.o:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/motion_plan.cpp.o
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/motion_plan.cpp.o
 .PHONY : src/motion_plan.cpp.o
 
 src/motion_plan.i: src/motion_plan.cpp.i
@@ -347,7 +722,7 @@ src/motion_plan.i: src/motion_plan.cpp.i
 
 # target to preprocess a source file
 src/motion_plan.cpp.i:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/motion_plan.cpp.i
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/motion_plan.cpp.i
 .PHONY : src/motion_plan.cpp.i
 
 src/motion_plan.s: src/motion_plan.cpp.s
@@ -356,7 +731,7 @@ src/motion_plan.s: src/motion_plan.cpp.s
 
 # target to generate assembly for a file
 src/motion_plan.cpp.s:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/motion_plan.cpp.s
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/motion_plan.cpp.s
 .PHONY : src/motion_plan.cpp.s
 
 src/pick_place.o: src/pick_place.cpp.o
@@ -365,7 +740,7 @@ src/pick_place.o: src/pick_place.cpp.o
 
 # target to build an object file
 src/pick_place.cpp.o:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pick_place.cpp.o
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pick_place.cpp.o
 .PHONY : src/pick_place.cpp.o
 
 src/pick_place.i: src/pick_place.cpp.i
@@ -374,7 +749,7 @@ src/pick_place.i: src/pick_place.cpp.i
 
 # target to preprocess a source file
 src/pick_place.cpp.i:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pick_place.cpp.i
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pick_place.cpp.i
 .PHONY : src/pick_place.cpp.i
 
 src/pick_place.s: src/pick_place.cpp.s
@@ -383,7 +758,7 @@ src/pick_place.s: src/pick_place.cpp.s
 
 # target to generate assembly for a file
 src/pick_place.cpp.s:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pick_place.cpp.s
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pick_place.cpp.s
 .PHONY : src/pick_place.cpp.s
 
 src/test_accuracy.o: src/test_accuracy.cpp.o
@@ -392,7 +767,7 @@ src/test_accuracy.o: src/test_accuracy.cpp.o
 
 # target to build an object file
 src/test_accuracy.cpp.o:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.o
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.o
 .PHONY : src/test_accuracy.cpp.o
 
 src/test_accuracy.i: src/test_accuracy.cpp.i
@@ -401,7 +776,7 @@ src/test_accuracy.i: src/test_accuracy.cpp.i
 
 # target to preprocess a source file
 src/test_accuracy.cpp.i:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.i
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.i
 .PHONY : src/test_accuracy.cpp.i
 
 src/test_accuracy.s: src/test_accuracy.cpp.s
@@ -410,7 +785,7 @@ src/test_accuracy.s: src/test_accuracy.cpp.s
 
 # target to generate assembly for a file
 src/test_accuracy.cpp.s:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.s
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/test_accuracy.dir/src/test_accuracy.cpp.s
 .PHONY : src/test_accuracy.cpp.s
 
 src/work_scene.o: src/work_scene.cpp.o
@@ -419,7 +794,7 @@ src/work_scene.o: src/work_scene.cpp.o
 
 # target to build an object file
 src/work_scene.cpp.o:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/src/work_scene.cpp.o
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/src/work_scene.cpp.o
 .PHONY : src/work_scene.cpp.o
 
 src/work_scene.i: src/work_scene.cpp.i
@@ -428,7 +803,7 @@ src/work_scene.i: src/work_scene.cpp.i
 
 # target to preprocess a source file
 src/work_scene.cpp.i:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/src/work_scene.cpp.i
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/src/work_scene.cpp.i
 .PHONY : src/work_scene.cpp.i
 
 src/work_scene.s: src/work_scene.cpp.s
@@ -437,7 +812,7 @@ src/work_scene.s: src/work_scene.cpp.s
 
 # target to generate assembly for a file
 src/work_scene.cpp.s:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/src/work_scene.cpp.s
+	cd /home/ziye01/kinova_mvig/build && $(MAKE) -f kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/build.make kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/src/work_scene.cpp.s
 .PHONY : src/work_scene.cpp.s
 
 # Help Target
@@ -449,21 +824,46 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... moveit_ros_planning_gencfg"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... motion_plan"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... work_scene"
-	@echo "... moveit_ros_manipulation_gencfg"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... test_accuracy"
-	@echo "... test"
 	@echo "... rebuild_cache"
-	@echo "... pick_place"
 	@echo "... edit_cache"
+	@echo "... test_accuracy"
+	@echo "... pick_place"
+	@echo "... motion_plan"
+	@echo "... test"
+	@echo "... work_scene"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_nodejs"
+	@echo "... object_recognition_msgs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... moveit_msgs_generate_messages_nodejs"
+	@echo "... shape_msgs_generate_messages_cpp"
+	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... moveit_msgs_generate_messages_eus"
+	@echo "... moveit_msgs_generate_messages_cpp"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... shape_msgs_generate_messages_py"
+	@echo "... moveit_msgs_generate_messages_py"
+	@echo "... object_recognition_msgs_generate_messages_lisp"
+	@echo "... shape_msgs_generate_messages_lisp"
+	@echo "... shape_msgs_generate_messages_eus"
+	@echo "... trajectory_msgs_generate_messages_eus"
+	@echo "... octomap_msgs_generate_messages_eus"
+	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... octomap_msgs_generate_messages_nodejs"
+	@echo "... list_install_components"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... object_recognition_msgs_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... octomap_msgs_generate_messages_cpp"
+	@echo "... octomap_msgs_generate_messages_py"
+	@echo "... moveit_ros_planning_gencfg"
+	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... moveit_ros_manipulation_gencfg"
+	@echo "... object_recognition_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_eus"
 	@echo "... src/motion_plan.o"
 	@echo "... src/motion_plan.i"
 	@echo "... src/motion_plan.s"
@@ -487,6 +887,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ziye01/lees_ros/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ziye01/kinova_mvig/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

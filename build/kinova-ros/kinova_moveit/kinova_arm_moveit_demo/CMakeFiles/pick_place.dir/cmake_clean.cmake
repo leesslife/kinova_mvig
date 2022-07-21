@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_arm_moveit_demo/pick_place"
-  "/home/ziye01/lees_ros/kinova_mvig/devel/lib/kinova_arm_moveit_demo/pick_place.pdb"
+  "/home/ziye01/kinova_mvig/devel/lib/kinova_arm_moveit_demo/pick_place"
+  "/home/ziye01/kinova_mvig/devel/lib/kinova_arm_moveit_demo/pick_place.pdb"
   "CMakeFiles/pick_place.dir/src/pick_place.cpp.o"
 )
 

@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/src/jaco_control"
+    "cmake.sourceDirectory": "${workspaceFolder}/src/jaco_control",
+    "python.analysis.extraPaths": [
+        "/home/ziye01/.local/lib/python3.7/site-packages",
+        "./devel/lib/python3/dist-packages"
+    ]
 }
